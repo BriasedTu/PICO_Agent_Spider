@@ -1,0 +1,808 @@
+{
+  "pico": {
+    "Question": "Should anticoagulation vs. no anticoagulation be used for pediatric patients with portal vein thrombosis?",
+    "Population": "pediatric patients with portal vein thrombosis",
+    "Intervention": "anticoagulation",
+    "Comparison": "no anticoagulation",
+    "Main outcomes": "Mortality; Neonatal Bleeding –Severe (reported as 'major bleeding'); Portal vein thrombosis (described as any VTE or 'no resolution' of the PVT); Heparin induced thrombocytopenia;",
+    "Setting": "Inpatient",
+    "Perspective": "Clinical recommendation – population perspective",
+    "Background": "Portal vein thrombosis (PVT) is a clinical condition usually described as rare but that it is being more commonly recognized and detected with rates ranging from 1 in 100,000 live births to 36 per 1,000 neonatal intensive care unit admissions. (1) Its etiology is different if the affected population are neonates, children or adults. In neonates is usually secondary to umbilical vein catheters (UVC) and infection (2) (3) associated with other possible factors such as low birth weight, hypoxia, hypercoagulability, low flow state, congenital malformations, among others. In children, PVT is associated to liver transplantation, splenectomy, sickle cell anemia, and abdominal sepsis, (1) while in adults it is related to cirrhosis from several causes.",
+    "Conflict of interest": "ASH conflict of interest declaration and management policies were applied, and the following panel members were voting panel members (determining the direction and strength of the recommendation): Paul MonagleSara VeselyManuela BonduelLeonardo BrandaoSheila HansonFiona NewallJohn WiernikowskiSuzan WilliamsTammy Capman Joerg MeerpholCaitlin AugustinePanel members recused as a result of risk of conflicts of interest: Anthony KC Chan Christoph MaleSarah O’Brien Heleen van Ommen Leslie Raffini"
+  },
+  "tablematrix": [
+    {
+      "_type": "assessment_table",
+      "class": "standard-table judgement-table",
+      "sections": [
+        {
+          "criterion": "Problem",
+          "question": "Is the problem a priority?",
+          "judgement_raw": "○ No○ Probably no○ Probably yes● Yes○ Varies○ Don't know",
+          "judgement_selected": "No",
+          "research_evidence": "Associated with the increasing use of intensive care units and UVCs in neonates, the use of better diagnostic techiques and awareness might be leading to an increase PVT detection rate. If PVT is not resolved there may be long term complications such as portal hypertension and lobar atrophy.There is currently no agreement and scarce evidence on the use of anticoagulants for the treatment of PVT and prevention of these long term complicatons.",
+          "additional_considerations": ""
+        },
+        {
+          "criterion": "Desirable Effects",
+          "question": "How substantial are the desirable anticipated effects?",
+          "judgement_raw": "○ Trivial○ Small○ Moderate○ Large○ Varies● Don't know",
+          "judgement_selected": "Trivial",
+          "research_evidence": {
+            "text": "These are all case series of retrospective nature obtained from one systematic review [Williams 2011]No confidence intervals reported but with low absolute numbers of participants and events.All case series with no comparison group.The rate of bleeding in the anticoagulation group is obtained indirectly from other pediatric populations [Massicotte 2003]Single arm study with no comparison to detect an effectNewall 2003; Schmugge 2002 NOTE: For a complete assessment see the EVIDENCE PROFILE.Undesirable consequences (additional information)Anticoagulation carries the risk of bleeding/hemorrhagic episodes. There are no studies assessing the risk of major or minor bleeding in patients with PVT. We assessed the usual risk of major bleeding from anticoagulants (LMWH, VKA, UFH) from one randomized trial (4) of LMWH (reviparin) for the prevention of thrombosis against UFH/VKA. The study was closed prematurely for poor accrual. The study included 186 patients and had a 15% rate of lost to follow up. One patient in the UFH/VKA group had a major bleeding (1.1%) with zero in the LMWH group. Minor bleeding occured in 53% of the LMWH group vs 44.7% in the UFH/VKA group. Others report the frequency of bleeding with LMWH from 0.7% to 3% (5).",
+            "tables": [
+              {
+                "_type": "table",
+                "class": "",
+                "headers": [
+                  "Outcomes",
+                  "№ of participants (studies) Follow up",
+                  "Quality of the evidence (GRADE)",
+                  "Impact"
+                ],
+                "rows": [
+                  {
+                    "Outcomes": "Mortality follow up: range 1 weeks to 5 years",
+                    "№ of participants (studies) Follow up": "(3 observational studies)",
+                    "Quality of the evidence (GRADE)": "⨁◯◯◯ VERY LOWa,b",
+                    "Impact": "Studies reported only 16% overall risk of death with no information for each group separately. In patients with no AC, spontaneous resolution of PVT is reported from 70% to 77% of patients with non-occlusive clots, and 31% to 48% with occlusive clots. One study [Morag 2006] describes 'no association' between AC and poor outcomes."
+                  },
+                  {
+                    "Outcomes": "Neonatal Bleeding –Severe (reported as 'major bleeding') assessed with: clinical assessment follow up: range 1 weeks to 12 weeks",
+                    "№ of participants (studies) Follow up": "(5 observational studies)",
+                    "Quality of the evidence (GRADE)": "⨁◯◯◯ VERY LOWb,c,d",
+                    "Impact": "The rate of major bleedings in all patients with PVT varies from 4.5% to 80%, and it's mostly related to esophageal varices and portal hypertension. Studies did not report bleeding events separately in those receiving and not receiving anticoagulation. [Morag 2006, Alvares 1983, Peter 2003] The rate of bleeding (from other pediatric populations) ranges from 3% to 5% with LMWH, UFH or VKA. [Ignjatovic 2010, Massicotte 2003]"
+                  },
+                  {
+                    "Outcomes": "Portal vein thrombosis (described as any VTE or 'no resolution' of the PVT) assessed with: clinical diagnosis and imaging follow up: range 1 weeks to 12 weeks",
+                    "№ of participants (studies) Follow up": "(1 observational study)",
+                    "Quality of the evidence (GRADE)": "⨁◯◯◯ VERY LOWb,c",
+                    "Impact": "The rate of thrombotic events on each group of study is unknown. There is no distinction between groups on thrombotic outcomes. [Morag 2006] In patients with no AC, spontaneous resolution of PVT occurs in 70% to 77% of patients with non-occlusive clots, and 31% to 48% in those with occlusive clots. The same study describes 'no association' between AC and poor outcomes."
+                  },
+                  {
+                    "Outcomes": "Heparin induced thrombocytopenia",
+                    "№ of participants (studies) Follow up": "(2 observational studies)",
+                    "Quality of the evidence (GRADE)": "⨁◯◯◯ VERY LOWe",
+                    "Impact": "Two observational studies reported the risk of HIT varies for pediatric patients. The risk is estimated to be close to 0% in children receiving standard heparin or LMWH. The risk of HIT is 2.3% (14/612) in children receiving heparin in the PICU. f"
+                  }
+                ]
+              }
+            ]
+          },
+          "additional_considerations": "The panel noted that in this condition it is important to consider the degree of occlusive thrombosis (prognosis differs among occlusive vs non-occlusive PVTs), and whether the desired outcomes may favor treatment with anticoagulant therapy compared to no treatment with anticoagulant therapy. Experts from the panel expressed (in an online survey) that they have managed in total around 800 patients during their years of practice. Of these, about 50% are treated without anticoagulation; of these less than 5% have a progression of the thrombosis, and <1% die."
+        },
+        {
+          "criterion": "Undesirable Effects",
+          "question": "How substantial are the undesirable anticipated effects?",
+          "judgement_raw": "○ Large○ Moderate● Small○ Trivial○ Varies○ Don't know",
+          "judgement_selected": "Large",
+          "research_evidence": {
+            "text": "These are all case series of retrospective nature obtained from one systematic review [Williams 2011]No confidence intervals reported but with low absolute numbers of participants and events.All case series with no comparison group.The rate of bleeding in the anticoagulation group is obtained indirectly from other pediatric populations [Massicotte 2003]Single arm study with no comparison to detect an effectNewall 2003; Schmugge 2002 NOTE: For a complete assessment see the EVIDENCE PROFILE.Undesirable consequences (additional information)Anticoagulation carries the risk of bleeding/hemorrhagic episodes. There are no studies assessing the risk of major or minor bleeding in patients with PVT. We assessed the usual risk of major bleeding from anticoagulants (LMWH, VKA, UFH) from one randomized trial (4) of LMWH (reviparin) for the prevention of thrombosis against UFH/VKA. The study was closed prematurely for poor accrual. The study included 186 patients and had a 15% rate of lost to follow up. One patient in the UFH/VKA group had a major bleeding (1.1%) with zero in the LMWH group. Minor bleeding occured in 53% of the LMWH group vs 44.7% in the UFH/VKA group. Others report the frequency of bleeding with LMWH from 0.7% to 3% (5).",
+            "tables": [
+              {
+                "_type": "table",
+                "class": "",
+                "headers": [
+                  "Outcomes",
+                  "№ of participants (studies) Follow up",
+                  "Quality of the evidence (GRADE)",
+                  "Impact"
+                ],
+                "rows": [
+                  {
+                    "Outcomes": "Mortality follow up: range 1 weeks to 5 years",
+                    "№ of participants (studies) Follow up": "(3 observational studies)",
+                    "Quality of the evidence (GRADE)": "⨁◯◯◯ VERY LOWa,b",
+                    "Impact": "Studies reported only 16% overall risk of death with no information for each group separately. In patients with no AC, spontaneous resolution of PVT is reported from 70% to 77% of patients with non-occlusive clots, and 31% to 48% with occlusive clots. One study [Morag 2006] describes 'no association' between AC and poor outcomes."
+                  },
+                  {
+                    "Outcomes": "Neonatal Bleeding –Severe (reported as 'major bleeding') assessed with: clinical assessment follow up: range 1 weeks to 12 weeks",
+                    "№ of participants (studies) Follow up": "(5 observational studies)",
+                    "Quality of the evidence (GRADE)": "⨁◯◯◯ VERY LOWb,c,d",
+                    "Impact": "The rate of major bleedings in all patients with PVT varies from 4.5% to 80%, and it's mostly related to esophageal varices and portal hypertension. Studies did not report bleeding events separately in those receiving and not receiving anticoagulation. [Morag 2006, Alvares 1983, Peter 2003] The rate of bleeding (from other pediatric populations) ranges from 3% to 5% with LMWH, UFH or VKA. [Ignjatovic 2010, Massicotte 2003]"
+                  },
+                  {
+                    "Outcomes": "Portal vein thrombosis (described as any VTE or 'no resolution' of the PVT) assessed with: clinical diagnosis and imaging follow up: range 1 weeks to 12 weeks",
+                    "№ of participants (studies) Follow up": "(1 observational study)",
+                    "Quality of the evidence (GRADE)": "⨁◯◯◯ VERY LOWb,c",
+                    "Impact": "The rate of thrombotic events on each group of study is unknown. There is no distinction between groups on thrombotic outcomes. [Morag 2006] In patients with no AC, spontaneous resolution of PVT occurs in 70% to 77% of patients with non-occlusive clots, and 31% to 48% in those with occlusive clots. The same study describes 'no association' between AC and poor outcomes."
+                  },
+                  {
+                    "Outcomes": "Heparin induced thrombocytopenia",
+                    "№ of participants (studies) Follow up": "(2 observational studies)",
+                    "Quality of the evidence (GRADE)": "⨁◯◯◯ VERY LOWe",
+                    "Impact": "Two observational studies reported the risk of HIT varies for pediatric patients. The risk is estimated to be close to 0% in children receiving standard heparin or LMWH. The risk of HIT is 2.3% (14/612) in children receiving heparin in the PICU. f"
+                  }
+                ]
+              }
+            ]
+          },
+          "additional_considerations": "Bleeding risks are important to consider in the anticipated undesirable effects. If the condition is accompanied by portal hypertension the risk increases; and the risk also can be influenced by age (neonates vs children)."
+        },
+        {
+          "criterion": "Certainty of evidence",
+          "question": "What is the overall certainty of the evidence of effects?",
+          "judgement_raw": "● Very low○ Low○ Moderate○ High○ No included studies",
+          "judgement_selected": "Very low",
+          "research_evidence": "Certainty of the evidence of effects was judged as 'very low'. All studies are case series with no comparison arm (high risk of bias), with indirectness for the bleeding outcome.",
+          "additional_considerations": ""
+        },
+        {
+          "criterion": "Values",
+          "question": "Is there important uncertainty about or variability in how much people value the main outcomes?",
+          "judgement_raw": "○ Important uncertainty or variability● Possibly important uncertainty or variability○ Probably no important uncertainty or variability○ No important uncertainty or variability",
+          "judgement_selected": "Important uncertainty or variability",
+          "research_evidence": "Utility related information: The relative importance of outcomes: Results from Panel Members' Utility Rating Survey: Utilities rated on the visual analog scale, where 0 represents death and 1 represents full health, were as follows. Pulmonary embolism – Severe marker state: 0.31 Pulmonary embolism – Moderate marker state: 0.49 Deep vein thrombosis (proximal) – Severe marker state: 0.49 Deep vein thrombosis (proximal) – Moderate marker state: 0.61 Deep vein thrombosis (distal) – Severe marker state: 0.56 Deep vein thrombosis (distal) – Moderate marker state: 0.68 Major bleeding: 0.30 Neonatal Bleeding – Severe: 0.30 Infant Bleeding – Severe: 0.26 Portal vein thrombosis in a child: 0.50Heparin-induced thrombocytopenia: 0.59We did not identify utility related information or non-utility information for the outcomes of interest specific to the pediatric population in the literature. Additional information from the adult population:Our systematic review for the adult population found that the relative importance of the outcomes is as follows: Pulmonary embolism: 0.63-0.93 (different methods) (14, 15, 16)Deep vein thrombosis: 0.64-0.99 (different methods) (15, 14, 16, 17, 18) Gastrointestinal tract bleeding event: 0.65 (standard gamble and time trade off) (14, 16)Muscular bleeding: 0.76 (time trade off) (16) Minor intracranial bleeding event: 0.75 (standard gamble) (14) Major intracranial bleeding event: 0.15 (standard gamble) (14) Central nervous system bleeding: 0.29-0.60 (standard gamble) (19, 8) Treatment with LMWH: 0.993 (time trade off) (20)( Treatment with warfarin (as a surrogate): 0.989 (time trade off)(20) We also identified in the systematic review the following non-utility information from the adult population:Anticoagulant therapy Adult patients highly value the benefits of risk reduction in VTE recurrence and post-thrombosis syndrome(16). Patients would favor efficacy and safety over convenience of route of administration (7). Further, patients would like to avoid adverse events but most of them are “not afraid of” the adverse events (6, 7, 8). For anticoagulant therapy in general, most patients would prefer the oral doses compared with injections, this is mainly because of treatment burden due to injection(6, 7). For patients with venographically proven deep venous thrombosis, 15 of the 19 patients expressed a preference for the subcutaneous route for administration of heparin over intravenous administration (9). Warfarin Adult patients would like to switch to another anticoagulant if it is as effective as warfarin; this is mainly due to the treatment burden associated with monitoring, injection and dietary change due to warfarin use (10). In another study approximately half of the patients did not consider VKA therapy particularly difficult to manage (11). LMWH For adult patients receiving low molecular weight heparin, patients placed a high score on “importance of ease of use”, “expectations of symptom relief”, and “conﬁdence in the treatment to prevent blood clots” while they had a low score of treatment-related side effects (bruise, bleeding). (12, 13).",
+          "additional_considerations": "Consideration about the variability in the significance of the portal vein thrombosis, depending on age and clinical circumstance. For example, portal vein thrombosis in a liver transplant patient as compared to a non-occlusive CVC related PVT in a neonate. Althgough the latter is more the focus of this guideline question."
+        },
+        {
+          "criterion": "Balance of effects",
+          "question": "Does the balance between desirable and undesirable effects favor the intervention or the comparison?",
+          "judgement_raw": "○ Favors the comparison○ Probably favors the comparison○ Does not favor either the intervention or the comparison○ Probably favors the intervention○ Favors the intervention● Varies○ Don't know",
+          "judgement_selected": "Favors the comparison",
+          "research_evidence": "",
+          "additional_considerations": "This decision depends on several factors: The balance probably favours anticoagulation if:> it is an occlusive PVT> it is present in a liver transplant patient> it is an idiopathic PVT The balance probably favours NO anticoagulation if:> it is a non-occlusive PVT> presence of portal hypertension presumably due to an old clot Also, consider that the limted evidence may preclude the ability to identify those at greater risk of PVT sequelae who may have a variable profile in terms of intervention benefits."
+        },
+        {
+          "criterion": "Resources required",
+          "question": "How large are the resource requirements (costs)?",
+          "judgement_raw": "○ Large costs● Moderate costs○ Negligible costs and savings○ Moderate savings○ Large savings○ Varies○ Don't know",
+          "judgement_selected": "Large costs",
+          "research_evidence": "No research evidence was identified on anticoagulation costs for portal vein thrombosis. Two studies reported the costs of disease from pediatric patients with any VTE. One reported for 834 pediatric patients with VTE a median annual expenditure of $25,258 and $24,934 USD in Medicaid and private insurance patients respectively. (21) Another study found that patients with VTE had an increased 8.1 inpatient days and excess average costs of $27,686 USD. (22)Additional information from adult population:In relation to the reported costs of anticoagulation, the direct cost per week with warfarin in adults ranges from $3.54 to $11.44 USD while this number in Canada decreases to $0.49 to $0.84 CAD per week. (23, 24, 25, 26) With heparin, the costs per unit range from $0.18 per 10 units, to $0.212 per 1000 units (27) with a cost per week of $37.00 USD and $11.14 CAD per day in Canada. (25, 26) LMWH (enoxaparin) cost varies. The wholesale cost in low and middle income economies is reported at about $13 to $75 USD per week. (28) In the United States the wholesale cost is about $98.91 USD per day as of 2016 (29).",
+          "additional_considerations": "Consideration about differentiation in costs among subgroups (e.g., occlusive vs non-occlusive)"
+        },
+        {
+          "criterion": "Certainty of evidence of required resources",
+          "question": "What is the certainty of the evidence of resource requirements (costs)?",
+          "judgement_raw": "● Very low○ Low○ Moderate○ High○ No included studies",
+          "judgement_selected": "Very low",
+          "research_evidence": "No evidence research identified.",
+          "additional_considerations": ""
+        },
+        {
+          "criterion": "Cost effectiveness",
+          "question": "Does the cost-effectiveness of the intervention favor the intervention or the comparison?",
+          "judgement_raw": "○ Favors the comparison○ Probably favors the comparison○ Does not favor either the intervention or the comparison○ Probably favors the intervention○ Favors the intervention● Varies○ No included studies",
+          "judgement_selected": "Favors the comparison",
+          "research_evidence": "No research evidence was identified.",
+          "additional_considerations": ""
+        },
+        {
+          "criterion": "Equity",
+          "question": "What would be the impact on health equity?",
+          "judgement_raw": "○ Reduced○ Probably reduced● Probably no impact○ Probably increased○ Increased○ Varies○ Don't know",
+          "judgement_selected": "Reduced",
+          "research_evidence": "No research evidence was identified.",
+          "additional_considerations": ""
+        },
+        {
+          "criterion": "Acceptability",
+          "question": "Is the intervention acceptable to key stakeholders?",
+          "judgement_raw": "○ No○ Probably no● Probably yes○ Yes○ Varies○ Don't know",
+          "judgement_selected": "No",
+          "research_evidence": "Observational research suggests the following regarding acceptability and barriers associated with the intervention: In Australia a prospective chart audit in a tertiary paediatric centre assessed the level of compliance of antithrombotic medication use in current practice with guidelines across a 100-day prospective chart audit in 2008-2009. The study showed that the level of compliance for use of antithrombotic medications for the indications of DVT and PE was 98.8% and 61.5%, respectively. High compliance was correlated with strong recommendations, with low compliance found especially in areas where recommendations were based on ‘weak’ evidence. This reflects clinician confidence in the strength of evidence currently available for paediatric antithrombotic therapy where there may be barriers associated with the use of the intervention where only low-quality, inconsistent, or indirect evidence extrapolated from adult data is available. (30) A key area where there was disagreement between clinical practice and guidelines was the routine use of unfractionated heparin infusions in children with central venous lines (30).",
+          "additional_considerations": ""
+        },
+        {
+          "criterion": "Feasibility",
+          "question": "Is the intervention feasible to implement?",
+          "judgement_raw": "○ No○ Probably no● Probably yes○ Yes○ Varies○ Don't know",
+          "judgement_selected": "No",
+          "research_evidence": "No research evidence identified.",
+          "additional_considerations": ""
+        }
+      ]
+    },
+    {
+      "_type": "summary-of-judgements",
+      "class": "summary-of-judgements",
+      "rows": [
+        {
+          "criterion": "Problem",
+          "options": [
+            {
+              "text": "No",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Probably no",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Probably yes",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Yes",
+              "checked": true,
+              "empty": false
+            },
+            {
+              "text": "",
+              "checked": false,
+              "empty": true
+            },
+            {
+              "text": "Varies",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Don't know",
+              "checked": false,
+              "empty": false
+            }
+          ],
+          "selected": "Yes"
+        },
+        {
+          "criterion": "Desirable Effects",
+          "options": [
+            {
+              "text": "Trivial",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Small",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Moderate",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Large",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "",
+              "checked": false,
+              "empty": true
+            },
+            {
+              "text": "Varies",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Don't know",
+              "checked": true,
+              "empty": false
+            }
+          ],
+          "selected": "Don't know"
+        },
+        {
+          "criterion": "Undesirable Effects",
+          "options": [
+            {
+              "text": "Large",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Moderate",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Small",
+              "checked": true,
+              "empty": false
+            },
+            {
+              "text": "Trivial",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "",
+              "checked": false,
+              "empty": true
+            },
+            {
+              "text": "Varies",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Don't know",
+              "checked": false,
+              "empty": false
+            }
+          ],
+          "selected": "Small"
+        },
+        {
+          "criterion": "Certainty of evidence",
+          "options": [
+            {
+              "text": "Very low",
+              "checked": true,
+              "empty": false
+            },
+            {
+              "text": "Low",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Moderate",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "High",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "",
+              "checked": false,
+              "empty": true
+            },
+            {
+              "text": "",
+              "checked": false,
+              "empty": true
+            },
+            {
+              "text": "No included studies",
+              "checked": false,
+              "empty": false
+            }
+          ],
+          "selected": "Very low"
+        },
+        {
+          "criterion": "Values",
+          "options": [
+            {
+              "text": "Important uncertainty or variability",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Possibly important uncertainty or variability",
+              "checked": true,
+              "empty": false
+            },
+            {
+              "text": "Probably no important uncertainty or variability",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "No important uncertainty or variability",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "",
+              "checked": false,
+              "empty": true
+            },
+            {
+              "text": "",
+              "checked": false,
+              "empty": true
+            },
+            {
+              "text": "",
+              "checked": false,
+              "empty": true
+            }
+          ],
+          "selected": "Possibly important uncertainty or variability"
+        },
+        {
+          "criterion": "Balance of effects",
+          "options": [
+            {
+              "text": "Favors the comparison",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Probably favors the comparison",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Does not favor either the intervention or the comparison",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Probably favors the intervention",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Favors the intervention",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Varies",
+              "checked": true,
+              "empty": false
+            },
+            {
+              "text": "Don't know",
+              "checked": false,
+              "empty": false
+            }
+          ],
+          "selected": "Varies"
+        },
+        {
+          "criterion": "Resources required",
+          "options": [
+            {
+              "text": "Large costs",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Moderate costs",
+              "checked": true,
+              "empty": false
+            },
+            {
+              "text": "Negligible costs and savings",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Moderate savings",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Large savings",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Varies",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Don't know",
+              "checked": false,
+              "empty": false
+            }
+          ],
+          "selected": "Moderate costs"
+        },
+        {
+          "criterion": "Certainty of evidence of required resources",
+          "options": [
+            {
+              "text": "Very low",
+              "checked": true,
+              "empty": false
+            },
+            {
+              "text": "Low",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Moderate",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "High",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "",
+              "checked": false,
+              "empty": true
+            },
+            {
+              "text": "",
+              "checked": false,
+              "empty": true
+            },
+            {
+              "text": "No included studies",
+              "checked": false,
+              "empty": false
+            }
+          ],
+          "selected": "Very low"
+        },
+        {
+          "criterion": "Cost effectiveness",
+          "options": [
+            {
+              "text": "Favors the comparison",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Probably favors the comparison",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Does not favor either the intervention or the comparison",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Probably favors the intervention",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Favors the intervention",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Varies",
+              "checked": true,
+              "empty": false
+            },
+            {
+              "text": "No included studies",
+              "checked": false,
+              "empty": false
+            }
+          ],
+          "selected": "Varies"
+        },
+        {
+          "criterion": "Equity",
+          "options": [
+            {
+              "text": "Reduced",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Probably reduced",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Probably no impact",
+              "checked": true,
+              "empty": false
+            },
+            {
+              "text": "Probably increased",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Increased",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Varies",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Don't know",
+              "checked": false,
+              "empty": false
+            }
+          ],
+          "selected": "Probably no impact"
+        },
+        {
+          "criterion": "Acceptability",
+          "options": [
+            {
+              "text": "No",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Probably no",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Probably yes",
+              "checked": true,
+              "empty": false
+            },
+            {
+              "text": "Yes",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "",
+              "checked": false,
+              "empty": true
+            },
+            {
+              "text": "Varies",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Don't know",
+              "checked": false,
+              "empty": false
+            }
+          ],
+          "selected": "Probably yes"
+        },
+        {
+          "criterion": "Feasibility",
+          "options": [
+            {
+              "text": "No",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Probably no",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Probably yes",
+              "checked": true,
+              "empty": false
+            },
+            {
+              "text": "Yes",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "",
+              "checked": false,
+              "empty": true
+            },
+            {
+              "text": "Varies",
+              "checked": false,
+              "empty": false
+            },
+            {
+              "text": "Don't know",
+              "checked": false,
+              "empty": false
+            }
+          ],
+          "selected": "Probably yes"
+        }
+      ]
+    },
+    {
+      "_type": "table",
+      "class": "conclusions-options",
+      "headers": [
+        "Strong recommendation against the intervention",
+        "Conditional recommendation against the intervention",
+        "Conditional recommendation for either the intervention or the comparison",
+        "Conditional recommendation for the intervention",
+        "Strong recommendation for the intervention"
+      ],
+      "rows": [
+        {
+          "Strong recommendation against the intervention": "○",
+          "Conditional recommendation against the intervention": "○",
+          "Conditional recommendation for either the intervention or the comparison": "○",
+          "Conditional recommendation for the intervention": "●",
+          "Strong recommendation for the intervention": "○"
+        }
+      ]
+    },
+    {
+      "_type": "table",
+      "class": "standard-table recommendation-table-static",
+      "headers": [
+        "col_1"
+      ],
+      "rows": [
+        {
+          "col_1": "Recommendation"
+        },
+        {
+          "col_1": "Recommendation A. The ASH guideline panel suggests using anticoagulation rather than no anticoagulation in pediatric patients with portal vein thrombosis (PVT) with occlusive thrombus, post liver transplant and idiopathic PVT (conditional recommendation based on very low certainty in the evidence about effects). Recommendation B. The ASH guideline panel suggests against using anticoagulation, and rather use no anticoagulation, in pediatric patients with portal vein thrombosis with non-occlusive thrombus or portal hypertension (conditional recommendation based on very low certainty in the evidence about effects)."
+        },
+        {
+          "col_1": ""
+        }
+      ]
+    },
+    {
+      "_type": "table",
+      "class": "standard-table recommendation-table-static",
+      "headers": [
+        "col_1"
+      ],
+      "rows": [
+        {
+          "col_1": "Justification"
+        },
+        {
+          "col_1": "The balance probably favors anticoagulation for occlusive PVT; present in a liver transplant patient; or idiopathic PVT. The balance probably favors NO anticoagulation for non-occlusive PVT or in the presence of portal hypertension suggesting the thrombosis is old. In addition, the panel considered that the limited evidence may preclude the ability to identify those at greater risk of PVT sequelae who may have a variable profile in terms of intervention benefits."
+        }
+      ]
+    },
+    {
+      "_type": "table",
+      "class": "standard-table recommendation-table-static",
+      "headers": [
+        "col_1"
+      ],
+      "rows": [
+        {
+          "col_1": "Subgroup considerations"
+        },
+        {
+          "col_1": ""
+        }
+      ]
+    },
+    {
+      "_type": "table",
+      "class": "standard-table recommendation-table-static",
+      "headers": [
+        "col_1"
+      ],
+      "rows": [
+        {
+          "col_1": "Implementation considerations"
+        },
+        {
+          "col_1": "In children who will not be anticoagulated, follow up monitoring is important as extension of clot or organ disfunction may require reconsideration of treatment options."
+        }
+      ]
+    },
+    {
+      "_type": "table",
+      "class": "standard-table recommendation-table-static",
+      "headers": [
+        "col_1"
+      ],
+      "rows": [
+        {
+          "col_1": "Monitoring and evaluation"
+        },
+        {
+          "col_1": "--"
+        }
+      ]
+    },
+    {
+      "_type": "table",
+      "class": "standard-table recommendation-table-static",
+      "headers": [
+        "col_1"
+      ],
+      "rows": [
+        {
+          "col_1": "Research priorities"
+        },
+        {
+          "col_1": "More research needed from randomized or non-randomized studies providing information on the effects of anticoagulation in patients with PVT in different subgroups."
+        }
+      ]
+    }
+  ]
+}

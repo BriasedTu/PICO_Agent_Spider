@@ -1,0 +1,1512 @@
+{
+    "profile": {
+        "@id": "AE1402BD-FD6E-8D27-BEE9-C52D4BD5B559",
+        "@context": [
+            {
+                "@base": "http://dbep.gradepro.org/",
+                "@vocab": "http://dbep.gradepro.org/schema/",
+                "@language": "en",
+                "schema": "http://schema.org/",
+                "cochrane": "http://linkeddata.cochrane.org/ontologies/pico/",
+                "xsd": "http://www.w3.org/2001/XMLSchema#",
+                "version": "schema:version",
+                "name": "schema:name",
+                "sameAs": "schema:sameAs",
+                "publicationTime": {
+                    "@id": "schema:datePublished",
+                    "@type": "xsd:dateTime"
+                },
+                "modificationTime": {
+                    "@id": "schema:dateModified",
+                    "@type": "xsd:dateTime"
+                },
+                "author": {
+                    "@id": "schema:author",
+                    "@container": "@list"
+                },
+                "explanation": {
+                    "@container": "@list"
+                },
+                "code": "schema:code",
+                "codeValue": "schema:codeValue",
+                "codingSystem": "schema:codingSystem",
+                "unitCode": "schema:unitCode",
+                "unitText": "schema:unitText",
+                "value": "schema:value",
+                "text": "schema:value",
+                "lowerBound": "schema:minValue",
+                "upperBound": "schema:maxValue",
+                "Person": "schema:Person",
+                "MedicalCode": "schema:MedicalCode",
+                "MedicalSymptom": "schema:MedicalSymptom",
+                "MedicalCondition": "schema:MedicalCondition",
+                "QuantitativeValue": "schema:QuantitativeValue"
+            },
+            {
+                "PICO": "cochrane:PICO",
+                "healthProblemOrPopulation": "cochrane:population",
+                "condition": "cochrane:condition",
+                "intervention": "cochrane:intervention",
+                "comparison": "cochrane:comparison",
+                "outcome": {
+                    "@id": "cochrane:outcome",
+                    "@container": "@list"
+                }
+            },
+            {
+                "title": "name",
+                "sofTitle": "alternateName",
+                "evidenceSummary": {
+                    "@container": "@list"
+                },
+                "patientGroup": {
+                    "@container": "@list"
+                }
+            }
+        ],
+        "@type": "ManagementEvidenceProfile",
+        "version": "94",
+        "modificationTime": "2015-11-29T06:42:59+01:00",
+        "bibliography": {
+            "value": "Barritt DW and Jordan SC. Anticoagulant Drugs in the treatment of Pulmonary Embolism"
+        },
+        "title": "Should heparin vs. no heparin be used in pulmonary embolism?",
+        "sofTitle": "heparin vs. no heparin in pulmonary embolism",
+        "question": {
+            "@id": "questions/AE1402BD-FD6E-8D27-BEE9-C52D4BD5B559",
+            "@type": "PICO",
+            "healthProblemOrPopulation": {
+                "@type": "HealthProblemOrPopulation",
+                "name": {
+                    "value": "pulmonary embolism"
+                },
+                "setting": {
+                    "value": "hospital acute care"
+                }
+            },
+            "intervention": {
+                "name": "heparin",
+                "@type": "Intervention"
+            },
+            "comparison": {
+                "name": "no heparin",
+                "@type": "Comparison"
+            },
+            "outcome": [
+                {
+                    "@id": "outcomes/331f55b4-6bc9-419b-a7f0-cc2da6c4004b",
+                    "@type": [
+                        "Outcome"
+                    ],
+                    "name": {
+                        "value": "Death"
+                    }
+                },
+                {
+                    "@id": "outcomes/56b11758-e03a-49d8-a579-dc2536925296",
+                    "@type": [
+                        "Outcome"
+                    ],
+                    "name": {
+                        "value": "Death from PE"
+                    }
+                },
+                {
+                    "@id": "outcomes/235278be-84b9-4992-8d68-addc166ff079",
+                    "@type": [
+                        "Outcome"
+                    ],
+                    "name": {
+                        "value": "Any PE recurrence (Death and non-fatal PE)"
+                    }
+                }
+            ]
+        },
+        "explanation": [
+            {
+                "@id": "_:e0",
+                "text": "no_explanation_provided"
+            },
+            {
+                "@id": "_:e1",
+                "text": "Unclear concealment, lack of blinding, early change in management (after 35 patients in total, all subsequent patients received treatment, so only the first 35 were counted"
+            },
+            {
+                "@id": "_:e2",
+                "text": "Please see detailed directness assessment table. issues about the Pop, Int and Comparator"
+            },
+            {
+                "@id": "_:e4",
+                "text": "only 5 events in 35 patients, very wide confidence intervals"
+            },
+            {
+                "@id": "_:e5",
+                "text": "only 11 events in 35 patients, very wide confidence intervals"
+            },
+            {
+                "@id": "_:e6",
+                "text": "only 6 events in 35 patients, very wide confidence intervals"
+            }
+        ],
+        "evidenceSummary": [
+            {
+                "@type": "DichotomousData",
+                "forOutcome": {
+                    "@id": "outcomes/331f55b4-6bc9-419b-a7f0-cc2da6c4004b"
+                },
+                "studyDesign": {
+                    "@type": "RandomisedTrials",
+                    "name": "randomised trials"
+                },
+                "numberOfStudies": {
+                    "value": 1
+                },
+                "patientGroup": [
+                    {
+                        "@type": "InterventionGroup",
+                        "totalCount": {
+                            "value": 16
+                        },
+                        "withOutcome": {
+                            "value": 1
+                        }
+                    },
+                    {
+                        "@type": "ControlGroup",
+                        "totalCount": {
+                            "value": 19
+                        },
+                        "withOutcome": {
+                            "value": 5
+                        }
+                    }
+                ],
+                "followUp": {
+                    "@type": "RangeFollowUp",
+                    "text": "0  to 1 years",
+                    "lowerBound": {
+                        "@type": "QuantitativeValue",
+                        "value": "0",
+                        "unitCode": "",
+                        "unitText": ""
+                    },
+                    "upperBound": {
+                        "@type": "QuantitativeValue",
+                        "value": "1",
+                        "unitCode": "ANN",
+                        "unitText": "years"
+                    }
+                },
+                "measuredWith": {
+                    "@type": "OutcomeMeasure",
+                    "name": ""
+                },
+                "effectSummary": {
+                    "@type": "SingleStudy",
+                    "relativeEffect": {
+                        "@type": "RiskRatio",
+                        "value": {
+                            "value": 0.28
+                        },
+                        "confidenceLevel": {
+                            "value": 0.95
+                        },
+                        "confidenceIntervalFrom": 0.03,
+                        "confidenceIntervalTo": 2.2
+                    },
+                    "absoluteEffect": [
+                        {
+                            "@type": "AutoCalculatedAbsoluteEffect",
+                            "forControlRisk": {
+                                "@id": "_:cr1"
+                            },
+                            "value": {
+                                "value": 189
+                            },
+                            "confidenceLevel": {
+                                "value": 0.95
+                            },
+                            "confidenceIntervalFrom": 255,
+                            "confidenceIntervalTo": -316,
+                            "denominator": 1000
+                        }
+                    ]
+                },
+                "quality": {
+                    "@type": "GradeQuality",
+                    "value": 1,
+                    "name": "VERY LOW",
+                    "riskOfBias": {
+                        "@type": "DowngradeOneLevel",
+                        "name": "serious",
+                        "explanation": [
+                            {
+                                "@id": "_:e1"
+                            }
+                        ]
+                    },
+                    "inconsistency": {
+                        "@type": "NoChange",
+                        "name": "not serious"
+                    },
+                    "indirectness": {
+                        "@type": "DowngradeOneLevel",
+                        "name": "serious",
+                        "explanation": [
+                            {
+                                "@id": "_:e2"
+                            }
+                        ]
+                    },
+                    "imprecision": {
+                        "@type": "DowngradeTwoLevels",
+                        "name": "very serious",
+                        "explanation": [
+                            {
+                                "@id": "_:e6"
+                            }
+                        ]
+                    },
+                    "otherConsiderations": {
+                        "name": "none",
+                        "publicationBias": {
+                            "@type": "NoChange",
+                            "name": "Undetected"
+                        },
+                        "doseResponseGradient": {
+                            "@type": "NoChange",
+                            "name": "no"
+                        },
+                        "plausibleConfounding": {
+                            "@type": "NoChange",
+                            "name": "no"
+                        },
+                        "largeEffect": {
+                            "@type": "NoChange",
+                            "name": "no"
+                        }
+                    }
+                },
+                "controlRisk": [
+                    {
+                        "@id": "_:cr1",
+                        "@type": "CalculatedControlRisk",
+                        "value": "26.3"
+                    }
+                ]
+            },
+            {
+                "@type": "DichotomousData",
+                "forOutcome": {
+                    "@id": "outcomes/56b11758-e03a-49d8-a579-dc2536925296"
+                },
+                "studyDesign": {
+                    "@type": "RandomisedTrials",
+                    "name": "randomised trials"
+                },
+                "numberOfStudies": {
+                    "value": 1
+                },
+                "patientGroup": [
+                    {
+                        "@type": "InterventionGroup",
+                        "totalCount": {
+                            "value": 16
+                        },
+                        "withOutcome": {
+                            "value": 0
+                        }
+                    },
+                    {
+                        "@type": "ControlGroup",
+                        "totalCount": {
+                            "value": 15
+                        },
+                        "withOutcome": {
+                            "value": 5
+                        }
+                    }
+                ],
+                "measuredWith": {
+                    "@type": "OutcomeMeasure",
+                    "name": ""
+                },
+                "effectSummary": {
+                    "@type": "SingleStudy",
+                    "relativeEffect": {
+                        "@type": "RiskRatio",
+                        "value": {
+                            "value": 0.13
+                        },
+                        "confidenceLevel": {
+                            "value": 0.95
+                        },
+                        "confidenceIntervalFrom": 0.001,
+                        "confidenceIntervalTo": 2.26
+                    },
+                    "absoluteEffect": [
+                        {
+                            "@type": "AutoCalculatedAbsoluteEffect",
+                            "forControlRisk": {
+                                "@id": "_:cr2"
+                            },
+                            "value": {
+                                "value": 290
+                            },
+                            "confidenceLevel": {
+                                "value": 0.95
+                            },
+                            "confidenceIntervalFrom": 333,
+                            "confidenceIntervalTo": -420,
+                            "denominator": 1000
+                        }
+                    ]
+                },
+                "quality": {
+                    "@type": "GradeQuality",
+                    "value": 1,
+                    "name": "VERY LOW",
+                    "riskOfBias": {
+                        "@type": "DowngradeOneLevel",
+                        "name": "serious",
+                        "explanation": [
+                            {
+                                "@id": "_:e1"
+                            }
+                        ]
+                    },
+                    "inconsistency": {
+                        "@type": "NoChange",
+                        "name": "not serious"
+                    },
+                    "indirectness": {
+                        "@type": "DowngradeOneLevel",
+                        "name": "serious",
+                        "explanation": [
+                            {
+                                "@id": "_:e2"
+                            }
+                        ]
+                    },
+                    "imprecision": {
+                        "@type": "DowngradeTwoLevels",
+                        "name": "very serious",
+                        "explanation": [
+                            {
+                                "@id": "_:e4"
+                            }
+                        ]
+                    },
+                    "otherConsiderations": {
+                        "name": "none",
+                        "publicationBias": {
+                            "@type": "NoChange",
+                            "name": "Undetected"
+                        },
+                        "doseResponseGradient": {
+                            "@type": "NoChange",
+                            "name": "no"
+                        },
+                        "plausibleConfounding": {
+                            "@type": "NoChange",
+                            "name": "no"
+                        },
+                        "largeEffect": {
+                            "@type": "NoChange",
+                            "name": "no"
+                        }
+                    }
+                },
+                "controlRisk": [
+                    {
+                        "@id": "_:cr2",
+                        "@type": "CalculatedControlRisk",
+                        "value": "33.3"
+                    }
+                ]
+            },
+            {
+                "@type": "DichotomousData",
+                "forOutcome": {
+                    "@id": "outcomes/235278be-84b9-4992-8d68-addc166ff079"
+                },
+                "studyDesign": {
+                    "@type": "RandomisedTrials",
+                    "name": "randomised trials"
+                },
+                "numberOfStudies": {
+                    "value": 1
+                },
+                "patientGroup": [
+                    {
+                        "@type": "InterventionGroup",
+                        "totalCount": {
+                            "value": 16
+                        },
+                        "withOutcome": {
+                            "value": 1
+                        }
+                    },
+                    {
+                        "@type": "ControlGroup",
+                        "totalCount": {
+                            "value": 19
+                        },
+                        "withOutcome": {
+                            "value": 10
+                        }
+                    }
+                ],
+                "followUp": {
+                    "@type": "RangeFollowUp",
+                    "text": "0  to 1 years",
+                    "lowerBound": {
+                        "@type": "QuantitativeValue",
+                        "value": "0",
+                        "unitCode": "",
+                        "unitText": ""
+                    },
+                    "upperBound": {
+                        "@type": "QuantitativeValue",
+                        "value": "1",
+                        "unitCode": "ANN",
+                        "unitText": "years"
+                    }
+                },
+                "measuredWith": {
+                    "@type": "OutcomeMeasure",
+                    "name": ""
+                },
+                "effectSummary": {
+                    "@type": "SingleStudy",
+                    "relativeEffect": {
+                        "@type": "RiskRatio",
+                        "value": {
+                            "value": 0.08
+                        },
+                        "confidenceLevel": {
+                            "value": 0.95
+                        },
+                        "confidenceIntervalFrom": 0.005,
+                        "confidenceIntervalTo": 1.35
+                    },
+                    "absoluteEffect": [
+                        {
+                            "@type": "AutoCalculatedAbsoluteEffect",
+                            "forControlRisk": {
+                                "@id": "_:cr3"
+                            },
+                            "value": {
+                                "value": 484
+                            },
+                            "confidenceLevel": {
+                                "value": 0.95
+                            },
+                            "confidenceIntervalFrom": -184,
+                            "confidenceIntervalTo": 524,
+                            "denominator": 1000
+                        }
+                    ]
+                },
+                "quality": {
+                    "@type": "GradeQuality",
+                    "value": 1,
+                    "name": "VERY LOW",
+                    "riskOfBias": {
+                        "@type": "DowngradeOneLevel",
+                        "name": "serious",
+                        "explanation": [
+                            {
+                                "@id": "_:e1"
+                            }
+                        ]
+                    },
+                    "inconsistency": {
+                        "@type": "NoChange",
+                        "name": "not serious"
+                    },
+                    "indirectness": {
+                        "@type": "DowngradeOneLevel",
+                        "name": "serious",
+                        "explanation": [
+                            {
+                                "@id": "_:e2"
+                            }
+                        ]
+                    },
+                    "imprecision": {
+                        "@type": "DowngradeTwoLevels",
+                        "name": "very serious",
+                        "explanation": [
+                            {
+                                "@id": "_:e5"
+                            }
+                        ]
+                    },
+                    "otherConsiderations": {
+                        "name": "none",
+                        "publicationBias": {
+                            "@type": "NoChange",
+                            "name": "Undetected"
+                        },
+                        "doseResponseGradient": {
+                            "@type": "NoChange",
+                            "name": "no"
+                        },
+                        "plausibleConfounding": {
+                            "@type": "NoChange",
+                            "name": "no"
+                        },
+                        "largeEffect": {
+                            "@type": "NoChange",
+                            "name": "no"
+                        }
+                    }
+                },
+                "controlRisk": [
+                    {
+                        "@id": "_:cr3",
+                        "@type": "CalculatedControlRisk",
+                        "value": "52.6"
+                    }
+                ]
+            }
+        ],
+        "author": {
+            "@type": "Person",
+            "name": "Schünemann HJ"
+        },
+        "extra": {
+            "isofData": {
+                "ok": true,
+                "reference_intervention_id": 1,
+                "interventions": [
+                    {
+                        "id": 1,
+                        "active": false,
+                        "short_name": "no heparin"
+                    },
+                    {
+                        "id": 2,
+                        "active": true,
+                        "short_name": "heparin"
+                    }
+                ],
+                "comparison": "no heparin",
+                "type_of_patient_singular": "patient",
+                "type_of_patient_plural": "patients",
+                "base_document": null,
+                "outcomes": [
+                    {
+                        "designStudies": "randomised_trials",
+                        "desirable": false,
+                        "title": "Death",
+                        "follow_up": "0 ",
+                        "summary": "",
+                        "population_index": 0,
+                        "scale": "dichotomous",
+                        "metaType": "SINGLE_STUDY",
+                        "population": [
+                            {
+                                "patient_difference_type": "patients",
+                                "with_intervention": 1,
+                                "without_intervention": 5,
+                                "absolute_difference": 4,
+                                "custom_label": "Study population",
+                                "interventions_data": {
+                                    "1": {
+                                        "versus": {
+                                            "1": {
+                                                "ci_from": 0,
+                                                "ci_to": 0
+                                            },
+                                            "2": {
+                                                "statistical_ratio": {
+                                                    "ci_from": 0.03,
+                                                    "ci_to": 2.2,
+                                                    "type": "RR",
+                                                    "value": 0.28
+                                                },
+                                                "quality_of_evidence": 1,
+                                                "participants": 35,
+                                                "ci_from": -255,
+                                                "ci_to": 316,
+                                                "studies": 1
+                                            }
+                                        },
+                                        "value": 263
+                                    },
+                                    "2": {
+                                        "versus": {
+                                            "1": {
+                                                "ci_from": 0,
+                                                "ci_to": 0
+                                            },
+                                            "2": {
+                                                "ci_from": 0,
+                                                "ci_to": 0
+                                            }
+                                        },
+                                        "value": 74
+                                    }
+                                }
+                            }
+                        ],
+                        "id": "331f55b4-6bc9-419b-a7f0-cc2da6c4004b",
+                        "scale_from": "",
+                        "scale_to": "",
+                        "total": 1000,
+                        "measure": "will develop an outcome",
+                        "participants": 35,
+                        "participants_global_value": true,
+                        "units_type": "countable"
+                    },
+                    {
+                        "designStudies": "randomised_trials",
+                        "desirable": false,
+                        "title": "Death from PE",
+                        "follow_up": "0 ",
+                        "summary": "",
+                        "population_index": 0,
+                        "scale": "dichotomous",
+                        "metaType": "SINGLE_STUDY",
+                        "population": [
+                            {
+                                "patient_difference_type": "patients",
+                                "with_intervention": 0,
+                                "without_intervention": 5,
+                                "absolute_difference": 5,
+                                "custom_label": "Study population",
+                                "interventions_data": {
+                                    "1": {
+                                        "versus": {
+                                            "1": {
+                                                "ci_from": 0,
+                                                "ci_to": 0
+                                            },
+                                            "2": {
+                                                "statistical_ratio": {
+                                                    "ci_from": 0.001,
+                                                    "ci_to": 2.26,
+                                                    "type": "RR",
+                                                    "value": 0.13
+                                                },
+                                                "quality_of_evidence": 1,
+                                                "participants": 31,
+                                                "ci_from": -333,
+                                                "ci_to": 420,
+                                                "studies": 1
+                                            }
+                                        },
+                                        "value": 333
+                                    },
+                                    "2": {
+                                        "versus": {
+                                            "1": {
+                                                "ci_from": 0,
+                                                "ci_to": 0
+                                            },
+                                            "2": {
+                                                "ci_from": 0,
+                                                "ci_to": 0
+                                            }
+                                        },
+                                        "value": 43
+                                    }
+                                }
+                            }
+                        ],
+                        "id": "56b11758-e03a-49d8-a579-dc2536925296",
+                        "scale_from": "",
+                        "scale_to": "",
+                        "total": 1000,
+                        "measure": "will develop an outcome",
+                        "participants": 31,
+                        "participants_global_value": true,
+                        "units_type": "countable"
+                    },
+                    {
+                        "designStudies": "randomised_trials",
+                        "desirable": false,
+                        "title": "Any PE recurrence (Death and non-fatal PE)",
+                        "follow_up": "0 ",
+                        "summary": "",
+                        "population_index": 0,
+                        "scale": "dichotomous",
+                        "metaType": "SINGLE_STUDY",
+                        "population": [
+                            {
+                                "patient_difference_type": "patients",
+                                "with_intervention": 1,
+                                "without_intervention": 10,
+                                "absolute_difference": 9,
+                                "custom_label": "Study population",
+                                "interventions_data": {
+                                    "1": {
+                                        "versus": {
+                                            "1": {
+                                                "ci_from": 0,
+                                                "ci_to": 0
+                                            },
+                                            "2": {
+                                                "statistical_ratio": {
+                                                    "ci_from": 0.005,
+                                                    "ci_to": 1.35,
+                                                    "type": "RR",
+                                                    "value": 0.08
+                                                },
+                                                "quality_of_evidence": 1,
+                                                "participants": 35,
+                                                "ci_from": 184,
+                                                "ci_to": -524,
+                                                "studies": 1
+                                            }
+                                        },
+                                        "value": 526
+                                    },
+                                    "2": {
+                                        "versus": {
+                                            "1": {
+                                                "ci_from": 0,
+                                                "ci_to": 0
+                                            },
+                                            "2": {
+                                                "ci_from": 0,
+                                                "ci_to": 0
+                                            }
+                                        },
+                                        "value": 42
+                                    }
+                                }
+                            }
+                        ],
+                        "id": "235278be-84b9-4992-8d68-addc166ff079",
+                        "scale_from": "",
+                        "scale_to": "",
+                        "total": 1000,
+                        "measure": "will develop an outcome",
+                        "participants": 35,
+                        "participants_global_value": true,
+                        "units_type": "countable"
+                    }
+                ]
+            },
+            "comparatorISoFData": {
+                "ok": true,
+                "reference_intervention_id": 1,
+                "interventions": [
+                    {
+                        "id": 1,
+                        "active": false,
+                        "short_name": "no heparin"
+                    },
+                    {
+                        "id": 2,
+                        "active": true,
+                        "short_name": "heparin"
+                    }
+                ],
+                "comparison": "no heparin",
+                "type_of_patient_singular": "patient",
+                "type_of_patient_plural": "patients",
+                "base_document": null,
+                "outcomes": [
+                    {
+                        "designStudies": "randomised_trials",
+                        "desirable": false,
+                        "title": "Death",
+                        "follow_up": "0 ",
+                        "summary": "",
+                        "population_index": 0,
+                        "scale": "dichotomous",
+                        "metaType": "SINGLE_STUDY",
+                        "population": [
+                            {
+                                "patient_difference_type": "patients",
+                                "with_intervention": 1,
+                                "without_intervention": 5,
+                                "absolute_difference": 4,
+                                "custom_label": "Study population",
+                                "interventions_data": {
+                                    "1": {
+                                        "versus": {
+                                            "1": {
+                                                "ci_from": 0,
+                                                "ci_to": 0
+                                            },
+                                            "2": {
+                                                "statistical_ratio": {
+                                                    "ci_from": 0.03,
+                                                    "ci_to": 2.2,
+                                                    "type": "RR",
+                                                    "value": 0.28
+                                                },
+                                                "quality_of_evidence": 1,
+                                                "participants": 35,
+                                                "ci_from": -255,
+                                                "ci_to": 316,
+                                                "studies": 1
+                                            }
+                                        },
+                                        "value": 263
+                                    },
+                                    "2": {
+                                        "versus": {
+                                            "1": {
+                                                "ci_from": 0,
+                                                "ci_to": 0
+                                            },
+                                            "2": {
+                                                "ci_from": 0,
+                                                "ci_to": 0
+                                            }
+                                        },
+                                        "value": 74
+                                    }
+                                }
+                            }
+                        ],
+                        "id": "331f55b4-6bc9-419b-a7f0-cc2da6c4004b",
+                        "scale_from": "",
+                        "scale_to": "",
+                        "total": 1000,
+                        "measure": "will develop an outcome",
+                        "participants": 35,
+                        "participants_global_value": true,
+                        "units_type": "countable"
+                    },
+                    {
+                        "designStudies": "randomised_trials",
+                        "desirable": false,
+                        "title": "Death from PE",
+                        "follow_up": "0 ",
+                        "summary": "",
+                        "population_index": 0,
+                        "scale": "dichotomous",
+                        "metaType": "SINGLE_STUDY",
+                        "population": [
+                            {
+                                "patient_difference_type": "patients",
+                                "with_intervention": 0,
+                                "without_intervention": 5,
+                                "absolute_difference": 5,
+                                "custom_label": "Study population",
+                                "interventions_data": {
+                                    "1": {
+                                        "versus": {
+                                            "1": {
+                                                "ci_from": 0,
+                                                "ci_to": 0
+                                            },
+                                            "2": {
+                                                "statistical_ratio": {
+                                                    "ci_from": 0.001,
+                                                    "ci_to": 2.26,
+                                                    "type": "RR",
+                                                    "value": 0.13
+                                                },
+                                                "quality_of_evidence": 1,
+                                                "participants": 31,
+                                                "ci_from": -333,
+                                                "ci_to": 420,
+                                                "studies": 1
+                                            }
+                                        },
+                                        "value": 333
+                                    },
+                                    "2": {
+                                        "versus": {
+                                            "1": {
+                                                "ci_from": 0,
+                                                "ci_to": 0
+                                            },
+                                            "2": {
+                                                "ci_from": 0,
+                                                "ci_to": 0
+                                            }
+                                        },
+                                        "value": 43
+                                    }
+                                }
+                            }
+                        ],
+                        "id": "56b11758-e03a-49d8-a579-dc2536925296",
+                        "scale_from": "",
+                        "scale_to": "",
+                        "total": 1000,
+                        "measure": "will develop an outcome",
+                        "participants": 31,
+                        "participants_global_value": true,
+                        "units_type": "countable"
+                    },
+                    {
+                        "designStudies": "randomised_trials",
+                        "desirable": false,
+                        "title": "Any PE recurrence (Death and non-fatal PE)",
+                        "follow_up": "0 ",
+                        "summary": "",
+                        "population_index": 0,
+                        "scale": "dichotomous",
+                        "metaType": "SINGLE_STUDY",
+                        "population": [
+                            {
+                                "patient_difference_type": "patients",
+                                "with_intervention": 1,
+                                "without_intervention": 10,
+                                "absolute_difference": 9,
+                                "custom_label": "Study population",
+                                "interventions_data": {
+                                    "1": {
+                                        "versus": {
+                                            "1": {
+                                                "ci_from": 0,
+                                                "ci_to": 0
+                                            },
+                                            "2": {
+                                                "statistical_ratio": {
+                                                    "ci_from": 0.005,
+                                                    "ci_to": 1.35,
+                                                    "type": "RR",
+                                                    "value": 0.08
+                                                },
+                                                "quality_of_evidence": 1,
+                                                "participants": 35,
+                                                "ci_from": 184,
+                                                "ci_to": -524,
+                                                "studies": 1
+                                            }
+                                        },
+                                        "value": 526
+                                    },
+                                    "2": {
+                                        "versus": {
+                                            "1": {
+                                                "ci_from": 0,
+                                                "ci_to": 0
+                                            },
+                                            "2": {
+                                                "ci_from": 0,
+                                                "ci_to": 0
+                                            }
+                                        },
+                                        "value": 42
+                                    }
+                                }
+                            }
+                        ],
+                        "id": "235278be-84b9-4992-8d68-addc166ff079",
+                        "scale_from": "",
+                        "scale_to": "",
+                        "total": 1000,
+                        "measure": "will develop an outcome",
+                        "participants": 35,
+                        "participants_global_value": true,
+                        "units_type": "countable"
+                    }
+                ]
+            },
+            "pooledSpecificityRangeFrom": null,
+            "pooledSensitivityComparisonRangeTo": null,
+            "pooledSensitivityComparisonRangeFrom": null,
+            "pooledSensitivityRangeTo": null,
+            "pooledSensitivityRangeFrom": null,
+            "pooledSpecificityComparisonTo": null,
+            "pooledSpecificityComparisonFrom": null,
+            "pooledSpecificityComparison": null,
+            "pooledSensitivityComparisonTo": null,
+            "pooledSensitivityComparisonFrom": null,
+            "pooledSensitivityComparison": null,
+            "pooledSpecificityTo": null,
+            "pooledSpecificityFrom": null,
+            "pooledSpecificity": null,
+            "pooledSensitivityTo": null,
+            "pooledSensitivityFrom": null,
+            "question": "Should heparin vs. no heparin be used in pulmonary embolism?",
+            "date": "",
+            "questionNo": 0,
+            "healthProblemOrPopulation": "pulmonary embolism",
+            "manualTableTitle": false,
+            "questionFormat": "IN_POP",
+            "type": "",
+            "outcomes": [
+                {
+                    "comparisonDirectnessDesc": "no placebo was used.",
+                    "interventionDirectnessDesc": "heparin followed by nicoumalone was given. ",
+                    "populationDirectnessDesc": "Patients admitted to the hospital in 1957. Different diagnostic criteria and tests from today.",
+                    "comments": "",
+                    "absEffectAutoCalcHigh": true,
+                    "absEffectToHigh": 0,
+                    "absEffectFromHigh": 0,
+                    "absEffectSizeHigh": 0,
+                    "absEffectAutoCalcModerate": true,
+                    "absEffectToModerate": 0,
+                    "absEffectFromModerate": 0,
+                    "absEffectSizeModerate": 0,
+                    "absEffectAutoCalcLow": true,
+                    "absEffectToLow": 0,
+                    "absEffectFromLow": 0,
+                    "absEffectSizeLow": 0,
+                    "absEffectAutoCalc": true,
+                    "absEffectTo": -316,
+                    "absEffectFrom": 255,
+                    "absEffectSize": 189,
+                    "perTimeFrameOther": null,
+                    "perPatientsOther": null,
+                    "perTimeFrame": "years",
+                    "perPatients": 1000,
+                    "absDenominator": 1000,
+                    "followUpLengthTo": "1",
+                    "followUpLength": "0",
+                    "confidenceIntervalTo": 2.2,
+                    "lowControlRisk": 0,
+                    "moderateControlRisk": 0,
+                    "highControlRisk": 0,
+                    "lowControlLabel": "Low",
+                    "direct_comparisonDirectnessDesc": "Yes",
+                    "outcomeDirectnessDesc": "No concerns",
+                    "populationDirectnessRadio": "no",
+                    "interventionDirectnessRadio": "probably_no",
+                    "comparisonDirectnessRadio": "probably_no",
+                    "direct_comparisonDirectnessRadio": "yes",
+                    "outcomeDirectnessRadio": "yes",
+                    "withOutcome": 0,
+                    "withoutOutcome": 0,
+                    "showFinalScoreInControls": true,
+                    "docType": "outcome",
+                    "importanceLabel": "",
+                    "scaleTo": "",
+                    "followUpType": "range",
+                    "followUpTimeUnit": "",
+                    "followUpToTimeUnit": "years",
+                    "metaType": "SINGLE_STUDY",
+                    "calculatedControlValue": "26.3",
+                    "unitsType": "countable",
+                    "footnotes": {
+                        "imprecision": [
+                            6
+                        ],
+                        "indirectness": [
+                            2
+                        ],
+                        "riskOfBias": [
+                            1
+                        ]
+                    },
+                    "scaleFrom": "",
+                    "othersFollowUpToTimeUnit": "",
+                    "othersFollowUpTimeUnit": "",
+                    "measuredWith": "",
+                    "shortName": "",
+                    "_id": "331f55b4-6bc9-419b-a7f0-cc2da6c4004b",
+                    "orderNumber": 1,
+                    "quality": 1,
+                    "highControl": false,
+                    "moderateControl": false,
+                    "lowControl": false,
+                    "calculatedControl": true,
+                    "controlTotal": 19,
+                    "controlCount": 5,
+                    "interventionTotal": 16,
+                    "interventionCount": 1,
+                    "effectTotal": "",
+                    "effectCount": "",
+                    "effectOtherDuration": "",
+                    "effectDuration": "",
+                    "imprecision": {
+                        "name": "VerySerious",
+                        "label": "very_serious",
+                        "score": -2
+                    },
+                    "indirectness": {
+                        "name": "Serious",
+                        "label": "serious",
+                        "score": -1
+                    },
+                    "inconsistency": {
+                        "name": "None",
+                        "label": "not_serious",
+                        "score": 0
+                    },
+                    "riskOfBias": {
+                        "name": "Serious",
+                        "label": "serious",
+                        "score": -1
+                    },
+                    "designStudies": {
+                        "name": "RandTrials",
+                        "label": "randomised_trials",
+                        "baseScore": 4
+                    },
+                    "noOfStudies": 1,
+                    "type": "dich",
+                    "name": "Death",
+                    "publicationBias": {
+                        "name": "None",
+                        "label": "not_serious",
+                        "score": 0
+                    },
+                    "largeEffect": {
+                        "name": "No",
+                        "label": "no",
+                        "score": 0
+                    },
+                    "plausibleConfounding": {
+                        "name": "No",
+                        "label": "no",
+                        "score": 0
+                    },
+                    "doseResponseGradient": {
+                        "name": "No",
+                        "label": "no",
+                        "score": 0
+                    },
+                    "effectMeasure": "RR",
+                    "effectRate": "",
+                    "effectDenominator": "",
+                    "effectOtherDenominator": "",
+                    "moderateControlLabel": "Moderate",
+                    "highControlLabel": "High",
+                    "effectSize": 0.28,
+                    "confidenceIntervalFrom": 0.03
+                },
+                {
+                    "comparisonDirectnessDesc": "",
+                    "interventionDirectnessDesc": "",
+                    "populationDirectnessDesc": "",
+                    "comments": "",
+                    "absEffectAutoCalcHigh": true,
+                    "absEffectToHigh": 0,
+                    "absEffectFromHigh": 0,
+                    "absEffectSizeHigh": 0,
+                    "absEffectAutoCalcModerate": true,
+                    "absEffectToModerate": 0,
+                    "absEffectFromModerate": 0,
+                    "absEffectSizeModerate": 0,
+                    "absEffectAutoCalcLow": true,
+                    "absEffectToLow": 0,
+                    "absEffectFromLow": 0,
+                    "absEffectSizeLow": 0,
+                    "absEffectAutoCalc": true,
+                    "absEffectTo": -420,
+                    "absEffectFrom": 333,
+                    "absEffectSize": 290,
+                    "perTimeFrameOther": null,
+                    "perPatientsOther": null,
+                    "perTimeFrame": "years",
+                    "perPatients": 1000,
+                    "absDenominator": 1000,
+                    "followUpLengthTo": "0",
+                    "followUpLength": "0",
+                    "confidenceIntervalTo": 2.26,
+                    "lowControlRisk": 0,
+                    "moderateControlRisk": 0,
+                    "highControlRisk": 0,
+                    "lowControlLabel": "Low",
+                    "direct_comparisonDirectnessDesc": "",
+                    "outcomeDirectnessDesc": "",
+                    "populationDirectnessRadio": "",
+                    "interventionDirectnessRadio": "",
+                    "comparisonDirectnessRadio": "",
+                    "direct_comparisonDirectnessRadio": "",
+                    "outcomeDirectnessRadio": "",
+                    "withOutcome": 0,
+                    "withoutOutcome": 0,
+                    "showFinalScoreInControls": true,
+                    "docType": "outcome",
+                    "importanceLabel": "",
+                    "scaleTo": "",
+                    "followUpType": "",
+                    "followUpTimeUnit": "",
+                    "followUpToTimeUnit": "",
+                    "metaType": "SINGLE_STUDY",
+                    "calculatedControlValue": "33.3",
+                    "unitsType": "countable",
+                    "footnotes": {
+                        "riskOfBias": [
+                            1
+                        ],
+                        "indirectness": [
+                            2,
+                            3
+                        ],
+                        "imprecision": [
+                            4
+                        ]
+                    },
+                    "scaleFrom": "",
+                    "othersFollowUpToTimeUnit": "",
+                    "othersFollowUpTimeUnit": "",
+                    "measuredWith": "",
+                    "shortName": "",
+                    "_id": "56b11758-e03a-49d8-a579-dc2536925296",
+                    "orderNumber": 2,
+                    "quality": 1,
+                    "highControl": false,
+                    "moderateControl": false,
+                    "lowControl": false,
+                    "calculatedControl": true,
+                    "controlTotal": 15,
+                    "controlCount": 5,
+                    "interventionTotal": 16,
+                    "interventionCount": 0,
+                    "effectTotal": "",
+                    "effectCount": "",
+                    "effectOtherDuration": "",
+                    "effectDuration": "",
+                    "imprecision": {
+                        "name": "VerySerious",
+                        "label": "very_serious",
+                        "score": -2
+                    },
+                    "indirectness": {
+                        "name": "Serious",
+                        "label": "serious",
+                        "score": -1
+                    },
+                    "inconsistency": {
+                        "name": "None",
+                        "label": "not_serious",
+                        "score": 0
+                    },
+                    "riskOfBias": {
+                        "name": "Serious",
+                        "label": "serious",
+                        "score": -1
+                    },
+                    "designStudies": {
+                        "name": "RandTrials",
+                        "label": "randomised_trials",
+                        "baseScore": 4
+                    },
+                    "noOfStudies": 1,
+                    "type": "dich",
+                    "name": "Death from PE",
+                    "publicationBias": {
+                        "name": "None",
+                        "label": "not_serious",
+                        "score": 0
+                    },
+                    "largeEffect": {
+                        "name": "No",
+                        "label": "no",
+                        "score": 0
+                    },
+                    "plausibleConfounding": {
+                        "name": "No",
+                        "label": "no",
+                        "score": 0
+                    },
+                    "doseResponseGradient": {
+                        "name": "No",
+                        "label": "no",
+                        "score": 0
+                    },
+                    "effectMeasure": "RR",
+                    "effectRate": "",
+                    "effectDenominator": "",
+                    "effectOtherDenominator": "",
+                    "moderateControlLabel": "Moderate",
+                    "highControlLabel": "High",
+                    "effectSize": 0.13,
+                    "confidenceIntervalFrom": 0.001
+                },
+                {
+                    "comparisonDirectnessDesc": "",
+                    "interventionDirectnessDesc": "",
+                    "populationDirectnessDesc": "",
+                    "comments": "",
+                    "absEffectAutoCalcHigh": true,
+                    "absEffectToHigh": 0,
+                    "absEffectFromHigh": 0,
+                    "absEffectSizeHigh": 0,
+                    "absEffectAutoCalcModerate": true,
+                    "absEffectToModerate": 0,
+                    "absEffectFromModerate": 0,
+                    "absEffectSizeModerate": 0,
+                    "absEffectAutoCalcLow": true,
+                    "absEffectToLow": 0,
+                    "absEffectFromLow": 0,
+                    "absEffectSizeLow": 0,
+                    "absEffectAutoCalc": true,
+                    "absEffectTo": 524,
+                    "absEffectFrom": -184,
+                    "absEffectSize": 484,
+                    "perTimeFrameOther": null,
+                    "perPatientsOther": null,
+                    "perTimeFrame": "years",
+                    "perPatients": 1000,
+                    "absDenominator": 1000,
+                    "followUpLengthTo": "1",
+                    "followUpLength": "0",
+                    "confidenceIntervalTo": 1.35,
+                    "lowControlRisk": 0,
+                    "moderateControlRisk": 0,
+                    "highControlRisk": 0,
+                    "lowControlLabel": "Low",
+                    "direct_comparisonDirectnessDesc": "",
+                    "outcomeDirectnessDesc": "",
+                    "populationDirectnessRadio": "",
+                    "interventionDirectnessRadio": "",
+                    "comparisonDirectnessRadio": "",
+                    "direct_comparisonDirectnessRadio": "",
+                    "outcomeDirectnessRadio": "",
+                    "withOutcome": 0,
+                    "withoutOutcome": 0,
+                    "showFinalScoreInControls": true,
+                    "docType": "outcome",
+                    "importanceLabel": "",
+                    "scaleTo": "",
+                    "followUpType": "range",
+                    "followUpTimeUnit": "",
+                    "followUpToTimeUnit": "years",
+                    "metaType": "SINGLE_STUDY",
+                    "calculatedControlValue": "52.6",
+                    "unitsType": "countable",
+                    "footnotes": {
+                        "imprecision": [
+                            5
+                        ],
+                        "indirectness": [
+                            2
+                        ],
+                        "riskOfBias": [
+                            1
+                        ]
+                    },
+                    "scaleFrom": "",
+                    "othersFollowUpToTimeUnit": "",
+                    "othersFollowUpTimeUnit": "",
+                    "measuredWith": "",
+                    "shortName": "",
+                    "_id": "235278be-84b9-4992-8d68-addc166ff079",
+                    "orderNumber": 3,
+                    "quality": 1,
+                    "highControl": false,
+                    "moderateControl": false,
+                    "lowControl": false,
+                    "calculatedControl": true,
+                    "controlTotal": 19,
+                    "controlCount": 10,
+                    "interventionTotal": 16,
+                    "interventionCount": 1,
+                    "effectTotal": "",
+                    "effectCount": "",
+                    "effectOtherDuration": "",
+                    "effectDuration": "",
+                    "imprecision": {
+                        "name": "VerySerious",
+                        "label": "very_serious",
+                        "score": -2
+                    },
+                    "indirectness": {
+                        "name": "Serious",
+                        "label": "serious",
+                        "score": -1
+                    },
+                    "inconsistency": {
+                        "name": "None",
+                        "label": "not_serious",
+                        "score": 0
+                    },
+                    "riskOfBias": {
+                        "name": "Serious",
+                        "label": "serious",
+                        "score": -1
+                    },
+                    "designStudies": {
+                        "name": "RandTrials",
+                        "label": "randomised_trials",
+                        "baseScore": 4
+                    },
+                    "noOfStudies": 1,
+                    "type": "dich",
+                    "name": "Any PE recurrence (Death and non-fatal PE)",
+                    "publicationBias": {
+                        "name": "None",
+                        "label": "not_serious",
+                        "score": 0
+                    },
+                    "largeEffect": {
+                        "name": "No",
+                        "label": "no",
+                        "score": 0
+                    },
+                    "plausibleConfounding": {
+                        "name": "No",
+                        "label": "no",
+                        "score": 0
+                    },
+                    "doseResponseGradient": {
+                        "name": "No",
+                        "label": "no",
+                        "score": 0
+                    },
+                    "effectMeasure": "RR",
+                    "effectRate": "",
+                    "effectDenominator": "",
+                    "effectOtherDenominator": "",
+                    "moderateControlLabel": "Moderate",
+                    "highControlLabel": "High",
+                    "effectSize": 0.08,
+                    "confidenceIntervalFrom": 0.005
+                }
+            ],
+            "intervention": "heparin",
+            "comparison": "no heparin",
+            "targetCondition": "[target condition]",
+            "indexTest": "[index test]",
+            "comparatorTest": "[comparator test]",
+            "authors": "Schünemann HJ",
+            "orderNumber": 3,
+            "settings": "hospital acute care",
+            "bibliography": "Barritt DW and Jordan SC. Anticoagulant Drugs in the treatment of Pulmonary Embolism",
+            "rev_author": "hojes",
+            "$timestamp": 1448775779534,
+            "footnotes": {},
+            "footnotesList": {
+                "idsOrder": [
+                    1,
+                    2,
+                    6,
+                    4,
+                    5,
+                    "no_explanation_provided"
+                ],
+                "currentId": 6,
+                "notes": {
+                    "1": "Unclear concealment, lack of blinding, early change in management (after 35 patients in total, all subsequent patients received treatment, so only the first 35 were counted",
+                    "2": "Please see detailed directness assessment table. issues about the Pop, Int and Comparator",
+                    "4": "only 5 events in 35 patients, very wide confidence intervals",
+                    "5": "only 11 events in 35 patients, very wide confidence intervals",
+                    "6": "only 6 events in 35 patients, very wide confidence intervals"
+                }
+            },
+            "coi": {},
+            "oneRowSource": "<!doctype html>\n<html class=\"no-js\" lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n  <title>Guideline Development Tool - printout</title>\n  <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n  <style media=\"screen,print\" type=\"text/css\">\n    @font-face {\n      font-family: \"GRADE-quality\";\n      src: url();\n      src: url('http://www.guidelinedevelopment.org/fonts/GRADE-quality.eot');\n      src: url('http://www.guidelinedevelopment.org/fonts/GRADE-quality.eot?#iefix')\n          format('embedded-opentype'),\n        url('http://www.guidelinedevelopment.org/fonts/GRADE-quality.woff') format('woff'),\n        url('http://www.guidelinedevelopment.org/fonts/GRADE-quality.ttf') format('truetype'),\n        url('http://www.guidelinedevelopment.org/fonts/GRADE-quality.svg#GRADE-quality')\n          format('svg');\n      font-weight: normal;\n      font-style: normal;\n    }\n    \n    @media print {\n      @page {\n        size: portrait;\n          \n          \n          \n          \n      }\n    }\n\n    body {\n       -webkit-print-color-adjust: exact;\n      font: normal 7pt 'Arial Narrow', Arial, sans-serif;\n      line-height:7pt;\n      letter-spacing: 0px;\n      font-stretch: condensed;\n      color: black;\n    }\n\n    table {\n      valign: top;\n      border: solid 1px black;\n      border-collapse: collapse;\n      font: normal 6.5pt 'Arial Narrow', Arial, sans-serif;\n    }\n\n    thead { display: table-row-group }\n\n    tr {\n      page-break-inside: avoid !important;\n    }\n\n    sup span.underline {\n      margin: 0;\n      padding: 0;\n      text-decoration: underline;\n    }\n\n    td {\n      text-align: left;\n      vertical-align: top;\n      border: solid 1px black;\n    }\n\n    th {\n      padding: 5px;\n      font-weight: bold;\n      border: solid 1px black;\n      text-align: center;\n    }\n\n    th.outcome-cell {\n      font-weight: normal;\n      padding: 1px 2px;\n      text-align: left;\n    }\n\n    th.impact {\n      width: 32%;\n    }\n\n    th.quality {\n      width: 10%;\n    }\n\n    td.quality {\n       text-align: center;\n       width: 50px;\n    }\n\n    td.relative-effect,\n    td.absolute-effect,\n    td.intervention,\n    td.control {\n      text-align: center;\n    }\n\n    td.quality img {\n      width: 8px;\n      height: 8px;\n    }\n\n    thead {\n      background: #dddddd;\n    }\n\n    .outcomes-table td:hover .note {\n      display: none;\n    }\n    .outcomes-table td button.note {\n      display: none;\n    }\n    .outcomes-table td button.note,\n    .outcomes-table td button.note:link,\n    .outcomes-table td button.note:visited,\n    .outcomes-table td button.note:hover,\n    .outcomes-table td button.note:active {\n      color: inherit;\n      text-decoration: none;\n    }\n    .outcomes-table td button.note.notes-not-empty {\n      display: none;\n    }\n\n    .outcomes-table .outcome-label {\n      text-align: left;\n    }\n    .outcome-label .ellipsis-wrapper {\n      display: inline-block;\n    }\n    .outcome-label-row {\n      background: #dddddd;\n    }\n    th.outcome-label-row {\n      background: #ededed;\n      text-align: left;\n    }\n\n    .outcome-edit-block {\n      display: none;\n    }\n    .outcomes-table .outcome-cell {\n        background: #ebebeb;\n    }\n    .outcomes-table button.save,\n    .outcomes-table button.edit,\n    .outcomes-table button.delete {\n      display: none;\n    }\n    .cell-content {\n      position: relative;\n    }\n    .cell-footnotes {\n      font-style: italic;\n      float: right;\n      padding: 2px;\n    }\n    .footnote-sup {\n      vertical-align: super;\n    }\n    .quality-sign {\n        font-family: 'GRADE-quality', Cambria, Helvetica, Arial;\n        font-size: 14px;\n    }\n\n    .printout-rows th {\n      font-weight: normal;\n    }\n    ol {\n      padding-left: 15px;\n    }\n\n    .no-of-studies {\n      width: 5%;\n    }\n    .risk-of-bias ,\n    .inconsistency,\n    .indirectness,\n    .imprecision {\n      width: 7%\n    }\n    .no-of-patients {\n      width: 16%\n    }\n    .relative-effect,\n    .intervention,\n    .control {\n      width: 8%\n    }\n    .other-considerations {\n      width: 11%\n    }\n    .design-studies,\n    .quality {\n      width: 6%\n    }\n    .importance {\n      width: 10%\n    }\n\n\n  </style>\n</head>\n<body>\n  <div class=\"outcomes-container\"><div class=\"question-data\">\n<div class=\"content\">\n\n      <div>\n        <b>Author(s)</b>: <label for=\"authors\">Schünemann HJ</label>\n        <span class=\"sup\"></span>\n      </div>\n      <div>\n        <b>Date</b>: \n      </div>\n      <div>\n        <b>Question</b>:\n        <label for=\"question\">Heparin compared to no heparin in pulmonary embolism</label>\n        <span class=\"sup\"></span>\n      </div>\n      <div>\n        <b>Setting</b>: <label for=\"settings\">hospital acute care</label>\n        <span class=\"sup\"></span>\n      </div>\n      <div>\n        <b>Bibliography</b>:\n        <label for=\"bibliography\">Barritt DW and Jordan SC. Anticoagulant Drugs in the treatment of Pulmonary Embolism</label><span class=\"sup\"></span>\n      </div>\n\n\n\n\n  </div></div>\n<table class=\"outcomes-table\" cellpadding=\"5\" width=\"100%\" valign=\"top\">\n  <thead>\n    <tr class=\"outcome-label-row\">\n      <th colspan=\"7\">Quality assessment</th>\n        <th colspan=\"2\">№ of patients</th>\n        <th colspan=\"2\" class=\"regular-header\" style=\"display: table-cell;\">Effect</th>\n      <th class=\"quality\" colspan=\"1\" rowspan=\"2\">Quality</th>\n      <th colspan=\"1\" rowspan=\"2\">Importance</th>\n    </tr>\n    <tr class=\"outcome-label-row\">\n      <th>№ of studies</th>\n      <th>Study design</th>\n      <th>Risk of bias</th>\n      <th>Inconsistency</th>\n      <th>Indirectness</th>\n      <th>Imprecision</th>\n      <th>Other considerations</th>\n        <th>heparin</th>\n        <th>no heparin</th>\n        <th class=\"regular-header\" style=\"display: table-cell;\">Relative<br>(95% CI)</th>\n        <th class=\"regular-header\" style=\"display: table-cell;\">Absolute<br>(95% CI)</th>\n    </tr>\n  </thead>\n  <tbody class=\"printout-rows\">\n\n  <tr data-item-cid=\"c185\" class=\"extra-item\"><th colspan=\"13\" class=\"outcome-label-row\">\n  <div class=\"outcome-label\">\n    <div class=\"name-block\"><span class=\"label outcome-name\">Death</span></div>\n  </div>\n</th>\n</tr><tr data-view-cid=\"view2631\" class=\"outcome-row outcome-one-row-printout-row\" data-item-cid=\"c185\">  <td data-col-no=\"1\" data-property=\"noOfStudies\" class=\"no-of-studies active\">\n    <div class=\"cell-content\">\n      <span>1</span>\n    </div>\n  </td>\n\n  <td data-col-no=\"2\" data-property=\"designStudies\" class=\"design-studies\">\n    <div class=\"cell-content\">\n      <span>randomised trials</span>\n    </div>\n  </td>\n\n  <td data-col-no=\"3\" data-property=\"riskOfBias\" class=\"risk-of-bias\">\n    <div class=\"cell-content\">\n      <span>serious</span>\n    <sup data-footnote-number=\"1\" data-footnote-id=\"1\">1</sup></div>\n  </td>\n\n  <td data-col-no=\"4\" data-property=\"inconsistency\" class=\"inconsistency\">\n    <div class=\"cell-content\">\n      <span>not serious</span>\n    </div>\n  </td>\n\n  <td data-col-no=\"5\" data-property=\"indirectness\" class=\"indirectness\">\n    <div class=\"cell-content\">\n      <span>serious</span>\n    <sup data-footnote-number=\"1\" data-footnote-id=\"2\">2</sup></div>\n  </td>\n\n  <td data-col-no=\"6\" data-property=\"imprecision\" class=\"imprecision\">\n    <div class=\"cell-content\">\n      <span>very serious</span>\n    <sup data-footnote-number=\"1\" data-footnote-id=\"6\">3</sup></div>\n  </td>\n\n  <td data-col-no=\"7\" data-property=\"otherConsiderations\" class=\"other-considerations\">\n    <div class=\"cell-content\">\n      <span>none</span>\n    </div>\n  </td>\n\n        <td data-col-no=\"8\" data-property=\"intervention\" class=\"intervention\">\n    <div class=\"cell-content\">\n      <span>1/16 (6.3%) </span>\n    </div>\n  </td>\n\n            <td data-col-no=\"9\" data-property=\"control\" class=\"control\">\n          <div class=\"cell-content main-value\">\n            <span class=\"cell-value\">5/19 (26.3%) </span>\n          </div>\n      </td>\n\n        <td data-col-no=\"10\" data-property=\"relativeEffect\" data-property-type=\"dich\" class=\"relative-effect\">\n        <div class=\"cell-content\">\n          <span><span class=\"cell\"><span class=\"block\"><b>RR 0.28</b></span><br>(0.03 to 2.20)</span></span>\n        </div>\n      </td>\n\n        <td data-col-no=\"11\" data-property=\"absoluteEffect\" class=\"absolute-effect\">\n          <div class=\"inner-cell dich\">\n            <div class=\"cell-content main-value\" style=\"height: auto;\">\n              <span><b>189 fewer per 1,000</b><br>(from 255 fewer to 316 more)</span>\n            </div>\n          </div>\n    </td>\n\n  <td data-col-no=\"12\" data-property=\"quality\" class=\"quality not-editable-cell\">\n    <div class=\"cell-content\">\n      <span><span class=\"quality-sign\">⨁</span><span class=\"quality-sign\">◯</span><span class=\"quality-sign\">◯</span><span class=\"quality-sign\">◯</span><br>VERY LOW</span>\n    </div>\n  </td>\n\n<td data-col-no=\"13\" data-property=\"importance\" class=\"importance\">\n  <div class=\"cell-content\">\n    <span></span>\n  </div>\n</td>\n\n</tr><tr data-item-cid=\"c186\" class=\"extra-item\"><th colspan=\"13\" class=\"outcome-label-row\">\n  <div class=\"outcome-label\">\n    <div class=\"name-block\"><span class=\"label outcome-name\">Death from PE</span></div>\n  </div>\n</th>\n</tr><tr data-view-cid=\"view2701\" class=\"outcome-row outcome-one-row-printout-row\" data-item-cid=\"c186\">  <td data-col-no=\"1\" data-property=\"noOfStudies\" class=\"no-of-studies\">\n    <div class=\"cell-content\">\n      <span>1</span>\n    </div>\n  </td>\n\n  <td data-col-no=\"2\" data-property=\"designStudies\" class=\"design-studies\">\n    <div class=\"cell-content\">\n      <span>randomised trials</span>\n    </div>\n  </td>\n\n  <td data-col-no=\"3\" data-property=\"riskOfBias\" class=\"risk-of-bias\">\n    <div class=\"cell-content\">\n      <span>serious</span>\n    <sup data-footnote-number=\"1\" data-footnote-id=\"1\">1</sup></div>\n  </td>\n\n  <td data-col-no=\"4\" data-property=\"inconsistency\" class=\"inconsistency\">\n    <div class=\"cell-content\">\n      <span>not serious</span>\n    </div>\n  </td>\n\n  <td data-col-no=\"5\" data-property=\"indirectness\" class=\"indirectness\">\n    <div class=\"cell-content\">\n      <span>serious</span>\n    <sup data-footnote-number=\"1\" data-footnote-id=\"2\">2</sup></div>\n  </td>\n\n  <td data-col-no=\"6\" data-property=\"imprecision\" class=\"imprecision\">\n    <div class=\"cell-content\">\n      <span>very serious</span>\n    <sup data-footnote-number=\"1\" data-footnote-id=\"4\">4</sup></div>\n  </td>\n\n  <td data-col-no=\"7\" data-property=\"otherConsiderations\" class=\"other-considerations\">\n    <div class=\"cell-content\">\n      <span>none</span>\n    </div>\n  </td>\n\n        <td data-col-no=\"8\" data-property=\"intervention\" class=\"intervention\">\n    <div class=\"cell-content\">\n      <span>0/16 (0.0%) </span>\n    </div>\n  </td>\n\n            <td data-col-no=\"9\" data-property=\"control\" class=\"control\">\n          <div class=\"cell-content main-value\">\n            <span class=\"cell-value\">5/15 (33.3%) </span>\n          </div>\n      </td>\n\n        <td data-col-no=\"10\" data-property=\"relativeEffect\" data-property-type=\"dich\" class=\"relative-effect\">\n        <div class=\"cell-content\">\n          <span><span class=\"cell\"><span class=\"block\"><b>RR 0.130</b></span><br>(0.001 to 2.260)</span></span>\n        </div>\n      </td>\n\n        <td data-col-no=\"11\" data-property=\"absoluteEffect\" class=\"absolute-effect\">\n          <div class=\"inner-cell dich\">\n            <div class=\"cell-content main-value\" style=\"height: auto;\">\n              <span><b>290 fewer per 1,000</b><br>(from 333 fewer to 420 more)</span>\n            </div>\n          </div>\n    </td>\n\n  <td data-col-no=\"12\" data-property=\"quality\" class=\"quality not-editable-cell\">\n    <div class=\"cell-content\">\n      <span><span class=\"quality-sign\">⨁</span><span class=\"quality-sign\">◯</span><span class=\"quality-sign\">◯</span><span class=\"quality-sign\">◯</span><br>VERY LOW</span>\n    </div>\n  </td>\n\n<td data-col-no=\"13\" data-property=\"importance\" class=\"importance\">\n  <div class=\"cell-content\">\n    <span></span>\n  </div>\n</td>\n\n</tr><tr data-item-cid=\"c187\" class=\"extra-item\"><th colspan=\"13\" class=\"outcome-label-row\">\n  <div class=\"outcome-label\">\n    <div class=\"name-block\"><span class=\"label outcome-name\">Any PE recurrence (Death and non-fatal PE)</span></div>\n  </div>\n</th>\n</tr><tr data-view-cid=\"view2771\" class=\"outcome-row outcome-one-row-printout-row\" data-item-cid=\"c187\">  <td data-col-no=\"1\" data-property=\"noOfStudies\" class=\"no-of-studies\">\n    <div class=\"cell-content\">\n      <span>1</span>\n    </div>\n  </td>\n\n  <td data-col-no=\"2\" data-property=\"designStudies\" class=\"design-studies\">\n    <div class=\"cell-content\">\n      <span>randomised trials</span>\n    </div>\n  </td>\n\n  <td data-col-no=\"3\" data-property=\"riskOfBias\" class=\"risk-of-bias\">\n    <div class=\"cell-content\">\n      <span>serious</span>\n    <sup data-footnote-number=\"1\" data-footnote-id=\"1\">1</sup></div>\n  </td>\n\n  <td data-col-no=\"4\" data-property=\"inconsistency\" class=\"inconsistency\">\n    <div class=\"cell-content\">\n      <span>not serious</span>\n    </div>\n  </td>\n\n  <td data-col-no=\"5\" data-property=\"indirectness\" class=\"indirectness\">\n    <div class=\"cell-content\">\n      <span>serious</span>\n    <sup data-footnote-number=\"1\" data-footnote-id=\"2\">2</sup></div>\n  </td>\n\n  <td data-col-no=\"6\" data-property=\"imprecision\" class=\"imprecision\">\n    <div class=\"cell-content\">\n      <span>very serious</span>\n    <sup data-footnote-number=\"1\" data-footnote-id=\"5\">5</sup></div>\n  </td>\n\n  <td data-col-no=\"7\" data-property=\"otherConsiderations\" class=\"other-considerations\">\n    <div class=\"cell-content\">\n      <span>none</span>\n    </div>\n  </td>\n\n        <td data-col-no=\"8\" data-property=\"intervention\" class=\"intervention\">\n    <div class=\"cell-content\">\n      <span>1/16 (6.3%) </span>\n    </div>\n  </td>\n\n            <td data-col-no=\"9\" data-property=\"control\" class=\"control\">\n          <div class=\"cell-content main-value\">\n            <span class=\"cell-value\">10/19 (52.6%) </span>\n          </div>\n      </td>\n\n        <td data-col-no=\"10\" data-property=\"relativeEffect\" data-property-type=\"dich\" class=\"relative-effect\">\n        <div class=\"cell-content\">\n          <span><span class=\"cell\"><span class=\"block\"><b>RR 0.080</b></span><br>(0.005 to 1.350)</span></span>\n        </div>\n      </td>\n\n        <td data-col-no=\"11\" data-property=\"absoluteEffect\" class=\"absolute-effect\">\n          <div class=\"inner-cell dich\">\n            <div class=\"cell-content main-value\" style=\"height: auto;\">\n              <span><b>484 fewer per 1,000</b><br>(from 184 more to 524 fewer)</span>\n            </div>\n          </div>\n    </td>\n\n  <td data-col-no=\"12\" data-property=\"quality\" class=\"quality not-editable-cell\">\n    <div class=\"cell-content\">\n      <span><span class=\"quality-sign\">⨁</span><span class=\"quality-sign\">◯</span><span class=\"quality-sign\">◯</span><span class=\"quality-sign\">◯</span><br>VERY LOW</span>\n    </div>\n  </td>\n\n<td data-col-no=\"13\" data-property=\"importance\" class=\"importance\">\n  <div class=\"cell-content\">\n    <span></span>\n  </div>\n</td>\n\n</tr></tbody>\n</table>\n  <p><b>CI:</b> Confidence interval; <b>RR:</b> Risk ratio</p>\n\n\n  </div>\n  <ol>\n      <li>Unclear concealment, lack of blinding, early change in management (after 35 patients in total, all subsequent patients received treatment, so only the first 35 were counted</li>\n      <li>Please see detailed directness assessment table. issues about the Pop, Int and Comparator</li>\n      <li>only 6 events in 35 patients, very wide confidence intervals</li>\n      <li>only 5 events in 35 patients, very wide confidence intervals</li>\n      <li>only 11 events in 35 patients, very wide confidence intervals</li>\n  </ol>\n</body>\n</html>\n",
+            "sofSource": "<!doctype html>\n<html class=\"no-js\" lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n  <title>Guideline Development Tool - printout</title>\n  <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n  <style media=\"screen,print\" type=\"text/css\">\n    @font-face {\n      font-family: \"GRADE-quality\";\n      src: url();\n      src: url('http://www.guidelinedevelopment.org/fonts/GRADE-quality.eot');\n      src: url('http://www.guidelinedevelopment.org/fonts/GRADE-quality.eot?#iefix')\n          format('embedded-opentype'),\n        url('http://www.guidelinedevelopment.org/fonts/GRADE-quality.woff') format('woff'),\n        url('http://www.guidelinedevelopment.org/fonts/GRADE-quality.ttf') format('truetype'),\n        url('http://www.guidelinedevelopment.org/fonts/GRADE-quality.svg#GRADE-quality')\n          format('svg');\n      font-weight: normal;\n      font-style: normal;\n    }\n    \n    @media print {\n      @page {\n        size: portrait;\n          \n          \n          \n          \n      }\n    }\n\n    body {\n      -webkit-print-color-adjust:exact;\n      font: normal 8pt 'Arial Narrow', Arial, sans-serif;\n      font-stretch: condensed;\n      color: black;\n      padding:5px;\n      margin:0;\n    }\n\n    sup span.underline {\n      margin: 0;\n      padding: 0;\n      text-decoration: underline;\n    }\n\n    p {\n      margin: 0px;\n    }\n\n    ol {\n      padding-left:15px;\n    }\n\n    span.bold {\n      font-weight: bold;\n    }\n\n    span.cell-value.normal {\n      font-weight: normal;\n    }\n\n    span.cell-value.pt8 {\n      font-size: 8pt;\n    }\n\n    span.label,\n    span.cell {\n      font-weight: normal;\n    }\n\n    span.block.bold {\n      display: block;\n      font-weight: bold;\n    }\n\n    span.outcome-name {\n      font-size: 9pt;\n      margin-top: 5px;\n    }\n\n    span.cell-value {\n      min-height: 30px;\n      max-width: 250px;\n      font-size: 9pt;\n    }\n\n    span.short-name {\n      font-weight: normal;\n    }\n\n    table {\n      border-spacing: 0;\n      border-collapse: collapse;\n      font: normal 8pt 'Arial Narrow', Arial, sans-serif;\n      width: 100%;\n    }\n\n    thead, tfoot { display: table-row-group }\n\n    tr {\n      page-break-inside: avoid !important;\n    }\n\n    td {\n      text-align: left;\n      border-top: solid 1px black;\n      border-bottom: solid 1px black;\n      border-left: 0px;\n      border-right: 0px;\n      word-wrap: break-word;\n    }\n\n    th {\n      position: relative;\n      text-align: left;\n      vertical-align: top;\n    }\n\n    th.grey-cell {\n      border-top: 1px solid #efefef;\n      border-right: 1px solid #efefef;\n      background: #e0e0e0;\n    }\n\n    thead,\n    tbody {\n      border-bottom: solid 2px black;\n    }\n\n    .first-letter:first-letter {\n      text-transform: uppercase;\n     }\n\n    .blue-cell {\n      text-align: left;\n      color: #fff;\n      font-weight: normal;\n      background-color: #3271aa;\n      border-right: 1px solid #efefef;\n    }\n\n    .narrative-desc,\n    .corresponding-risk,\n    .grey-cell,\n    .control,\n    .absolute-effect {\n      vertical-align: top;\n      text-align: left;\n      background-color: #ebebeb;\n    }\n\n    .white-cell {\n      background-color: #ffffff;\n    }\n\n    td.title-cell{\n      border: none;\n    }\n\n    td.info-cell {\n      border-top: solid 2px black;\n      border-bottom: solid 2px black;\n      border-left: 0px;\n      border-right: 0px;\n    }\n\n    td.control-label {\n      background: #e0e0e0;\n      border-color: #000000;\n      font-weight: bold;\n    }\n\n    p.sof-title {\n      font-size: 11pt;\n    }\n\n    p span{\n      font-weight: normal;\n    }\n\n    .not-editable-cell,\n    .normal-font {\n      font-weight: normal;\n    }\n\n    .outcome-label-row {\n      border: none;\n    }\n    .outcome-edit-block {\n      display: none;\n    }\n    .outcomes-table .outcome-label span {\n      margin: 0px 5px;\n    }\n\n    td.outcome-cell,\n    td.relative-effect,\n    td.no-of-participants,\n    td.quality,\n    td.comments {\n      vertical-align: top;\n    }\n\n    td.outcome-cell,\n    td.control,\n    td.absolute-effect,\n    td.relative-effect {\n      font-weight: normal;\n    }\n\n    td.outcome-cell {\n      max-width: 220px;\n    }\n\n    td.quality {\n      width: 75px;\n    }\n\n    .cell-footnotes {\n      font-style: italic;\n      float: right;\n      padding: 2px;\n    }\n\n    .quality-sign {\n        font-family: 'GRADE-quality', Cambria, Helvetica, Arial;\n        font-size: 14px;\n    }\n\n    .control {\n      width: 12%\n    }\n    .with-intervention,\n    .without-intervention,\n    .difference,\n    .risk-difference-with-intervention,\n    .risk-with-control,\n    .corresponding-risk,\n    .relative-effect,\n    .no-of-participants {\n      width: 12%\n    }\n    .what_happens,\n    .comments {\n      width: 26%\n    }\n    .impact {\n      width: 36%\n    }\n\n  </style>\n</head>\n<body><table class=\"outcomes-table \" valign=\"top\" cellpadding=\"5\" width=\"100%\">\n  <thead>\n      <tr>\n        <td colspan=\"7\" class=\"title-cell\">\n          <b>Summary of findings: </b>\n        </td>\n      </tr>\n      <tr>\n        <td colspan=\"7\" class=\"info-cell printout\">\n        <p class=\"sof-title\"><b>Heparin compared to no heparin in pulmonary embolism</b></p>\n        </td>\n      </tr>\n      <tr>\n        <td colspan=\"7\" class=\"info-cell question-data\">\n        <div class=\"content\">\n        <div>\n          <b>Patient or population</b>:\n          <label id=\"healthProblemOrPopulation\">pulmonary embolism</label>\n          <span class=\"sup\"></span>\n        </div>\n        <div>\n          <b>Setting</b>:\n          <label for=\"settings\">hospital acute care</label>\n          <span class=\"sup\"></span>\n        </div>\n        <div>\n          <b>Intervention</b>:\n          <label id=\"intervention\">heparin</label>\n        </div>\n        <div>\n          <b>Comparison</b>:\n          <label id=\"comparison\">no heparin</label>\n        </div>\n\n\n\n\n\n  </div></td>\n      </tr>\n    <tr>\n      <th rowspan=\"2\" class=\"blue-cell\"><p>Outcomes</p></th>\n        <th colspan=\"2\" class=\"grey-cell regular-header\" style=\"display: table-cell;\">\n          <p>\n            Anticipated absolute effects<sup>*</sup> <span>(95% CI)</span>\n          </p>\n        </th>\n        <th rowspan=\"2\" class=\"blue-cell regular-header\" style=\"display: table-cell;\">\n          <p>\n            Relative effect<br>(95% CI)\n          </p>\n        </th>\n      <th rowspan=\"2\" class=\"blue-cell\">\n        <p>№ of participants <br>\n          (studies)\n        </p>\n      </th>\n      <th rowspan=\"2\" class=\"blue-cell\">\n        <p>\n          Quality of the evidence<br>(GRADE)\n        </p>\n      </th>\n        <th rowspan=\"2\" class=\"comments blue-cell\">\n          <p>Comments</p>\n        </th>\n    </tr>\n    <tr>\n        <th class=\"grey-cell regular-header\" style=\"display: table-cell;\">\n          <p class=\"first-letter\">Risk with no heparin</p>\n        </th>\n        <th class=\"grey-cell regular-header\" style=\"display: table-cell;\">\n          <p class=\"first-letter\">Risk with heparin</p>\n        </th>\n    </tr>\n  </thead>\n\n  <tbody class=\"printout-rows\">\n\n  <tr data-view-cid=\"view2375\" class=\"outcome-row outcome-sof-printout-row\" data-item-cid=\"c185\"><td class=\"outcome-cell active\" data-col-no=\"1\" data-property=\"sofOutcomeLabel\">\n  <div class=\"cell-content\">\n      <span><span class=\"label outcome-name\">Death</span></span>\n  </div>\n</td>\n\n                <td data-col-no=\"2\" data-property=\"riskWithControl\" class=\"risk-with-control\">\n              <div class=\"inner-cell dich\">\n                <div class=\"cell-content main-value\">\n                  <span>263 per 1,000</span>\n                </div>\n              </div>\n          </td>\n\n            <td data-col-no=\"3\" data-property=\"correspondingRisk\" class=\"corresponding-risk\">\n          <div class=\"inner-cell\">\n            <div class=\"cell-content main-value\">\n              <span><span class=\"cell-value\"> <b>74 per 1,000</b><br>(8 to 579)</span></span>\n            </div>\n          </div>\n      </td>\n\n            <td data-col-no=\"4\" data-property=\"relativeEffect\" data-property-type=\"dich\" class=\"relative-effect\">\n        <div class=\"cell-content\">\n          <span><span class=\"cell\"><span class=\"block\"><b>RR 0.28</b></span><br>(0.03 to 2.20)</span></span>\n        </div>\n      </td>\n\n  <td class=\"no-of-participants\" data-property=\"noOfParticipantsStudies\" data-col-no=\"5\">\n    <div class=\"cell-content\">\n      <span>35<br>(1 RCT)</span>\n    </div>\n  </td>\n\n  <td data-col-no=\"6\" data-property=\"quality\" class=\"quality not-editable-cell\">\n    <div class=\"cell-content\">\n      <span><span class=\"quality-sign\">⨁</span><span class=\"quality-sign\">◯</span><span class=\"quality-sign\">◯</span><span class=\"quality-sign\">◯</span><br>VERY LOW</span>\n    <sup data-footnote-number=\"1\" data-footnote-id=\"1\">1<span class=\"comma\">,</span></sup><sup data-footnote-number=\"1\" data-footnote-id=\"2\">2<span class=\"comma\">,</span></sup><sup data-footnote-number=\"1\" data-footnote-id=\"6\">3</sup></div>\n  </td>\n\n    <td data-col-no=\"7\" data-property=\"comments\" class=\"comments\" data-table-mode-visible=\"regular\" style=\"display: table-cell;\">\n  <div class=\"cell-content\">\n    <span></span>\n  </div>\n</td>\n\n</tr><tr data-view-cid=\"view2439\" class=\"outcome-row outcome-sof-printout-row\" data-item-cid=\"c186\"><td class=\"outcome-cell\" data-col-no=\"1\" data-property=\"sofOutcomeLabel\">\n  <div class=\"cell-content\">\n      <span><span class=\"label outcome-name\">Death from PE</span></span>\n  </div>\n</td>\n\n                <td data-col-no=\"2\" data-property=\"riskWithControl\" class=\"risk-with-control\">\n              <div class=\"inner-cell dich\">\n                <div class=\"cell-content main-value\">\n                  <span>333 per 1,000</span>\n                </div>\n              </div>\n          </td>\n\n            <td data-col-no=\"3\" data-property=\"correspondingRisk\" class=\"corresponding-risk\">\n          <div class=\"inner-cell\">\n            <div class=\"cell-content main-value\">\n              <span><span class=\"cell-value\"> <b>43 per 1,000</b><br>(0 to 753)</span></span>\n            </div>\n          </div>\n      </td>\n\n            <td data-col-no=\"4\" data-property=\"relativeEffect\" data-property-type=\"dich\" class=\"relative-effect\">\n        <div class=\"cell-content\">\n          <span><span class=\"cell\"><span class=\"block\"><b>RR 0.130</b></span><br>(0.001 to 2.260)</span></span>\n        </div>\n      </td>\n\n  <td class=\"no-of-participants\" data-property=\"noOfParticipantsStudies\" data-col-no=\"5\">\n    <div class=\"cell-content\">\n      <span>31<br>(1 RCT)</span>\n    </div>\n  </td>\n\n  <td data-col-no=\"6\" data-property=\"quality\" class=\"quality not-editable-cell\">\n    <div class=\"cell-content\">\n      <span><span class=\"quality-sign\">⨁</span><span class=\"quality-sign\">◯</span><span class=\"quality-sign\">◯</span><span class=\"quality-sign\">◯</span><br>VERY LOW</span>\n    <sup data-footnote-number=\"1\" data-footnote-id=\"1\">1<span class=\"comma\">,</span></sup><sup data-footnote-number=\"1\" data-footnote-id=\"2\">2<span class=\"comma\">,</span></sup><sup data-footnote-number=\"1\" data-footnote-id=\"4\">4</sup></div>\n  </td>\n\n    <td data-col-no=\"7\" data-property=\"comments\" class=\"comments\" data-table-mode-visible=\"regular\" style=\"display: table-cell;\">\n  <div class=\"cell-content\">\n    <span></span>\n  </div>\n</td>\n\n</tr><tr data-view-cid=\"view2503\" class=\"outcome-row outcome-sof-printout-row\" data-item-cid=\"c187\"><td class=\"outcome-cell\" data-col-no=\"1\" data-property=\"sofOutcomeLabel\">\n  <div class=\"cell-content\">\n      <span><span class=\"label outcome-name\">Any PE recurrence (Death and non-fatal PE)</span></span>\n  </div>\n</td>\n\n                <td data-col-no=\"2\" data-property=\"riskWithControl\" class=\"risk-with-control\">\n              <div class=\"inner-cell dich\">\n                <div class=\"cell-content main-value\">\n                  <span>526 per 1,000</span>\n                </div>\n              </div>\n          </td>\n\n            <td data-col-no=\"3\" data-property=\"correspondingRisk\" class=\"corresponding-risk\">\n          <div class=\"inner-cell\">\n            <div class=\"cell-content main-value\">\n              <span><span class=\"cell-value\"> <b>42 per 1,000</b><br>(3 to 711)</span></span>\n            </div>\n          </div>\n      </td>\n\n            <td data-col-no=\"4\" data-property=\"relativeEffect\" data-property-type=\"dich\" class=\"relative-effect\">\n        <div class=\"cell-content\">\n          <span><span class=\"cell\"><span class=\"block\"><b>RR 0.080</b></span><br>(0.005 to 1.350)</span></span>\n        </div>\n      </td>\n\n  <td class=\"no-of-participants\" data-property=\"noOfParticipantsStudies\" data-col-no=\"5\">\n    <div class=\"cell-content\">\n      <span>35<br>(1 RCT)</span>\n    </div>\n  </td>\n\n  <td data-col-no=\"6\" data-property=\"quality\" class=\"quality not-editable-cell\">\n    <div class=\"cell-content\">\n      <span><span class=\"quality-sign\">⨁</span><span class=\"quality-sign\">◯</span><span class=\"quality-sign\">◯</span><span class=\"quality-sign\">◯</span><br>VERY LOW</span>\n    <sup data-footnote-number=\"1\" data-footnote-id=\"1\">1<span class=\"comma\">,</span></sup><sup data-footnote-number=\"1\" data-footnote-id=\"2\">2<span class=\"comma\">,</span></sup><sup data-footnote-number=\"1\" data-footnote-id=\"5\">5</sup></div>\n  </td>\n\n    <td data-col-no=\"7\" data-property=\"comments\" class=\"comments\" data-table-mode-visible=\"regular\" style=\"display: table-cell;\">\n  <div class=\"cell-content\">\n    <span></span>\n  </div>\n</td>\n\n</tr></tbody>\n  <tbody>\n    <tr>\n      <td colspan=\"7\">\n        *<b>The risk in the intervention group</b> (and its 95% confidence interval) is based on the assumed risk in the comparison group and the <b>relative effect</b> of the intervention (and its 95% CI).\n        <br>\n        <br>\n        <b>CI:</b> Confidence interval; <b>RR:</b> Risk ratio\n      </td>\n    </tr>\n  </tbody>\n  <tbody>\n    <tr>\n      <td colspan=\"7\">\n        <b>GRADE Working Group grades of evidence</b><br> <b>High quality:</b> We are very confident that the true effect lies close to that of the estimate of the effect<br> <b>Moderate quality:</b> We are moderately confident in the effect estimate: The true effect is likely to be close to the estimate of the effect, but there is a possibility that it is substantially different<br><b>Low quality:</b> Our confidence in the effect estimate is limited: The true effect may be substantially different from the estimate of the effect<br><b>Very low quality:</b> We have very little confidence in the effect estimate: The true effect is likely to be substantially different from the estimate of effect\n      </td>\n    </tr>\n  </tbody>\n</table>\n\n  <ol>\n      <li>Unclear concealment, lack of blinding, early change in management (after 35 patients in total, all subsequent patients received treatment, so only the first 35 were counted</li>\n      <li>Please see detailed directness assessment table. issues about the Pop, Int and Comparator</li>\n      <li>only 6 events in 35 patients, very wide confidence intervals</li>\n      <li>only 5 events in 35 patients, very wide confidence intervals</li>\n      <li>only 11 events in 35 patients, very wide confidence intervals</li>\n  </ol>\n</body>\n</html>\n",
+            "guidelineTitle": "EtD Diagnosis paper",
+            "guidelineId": "p_ksa_d7c79d83-cc0f-45e6-ad7b-9720215d63ff",
+            "_rev": "94-bcad40481a48864ffe9c379e62bea54a",
+            "_id": "AE1402BD-FD6E-8D27-BEE9-C52D4BD5B559",
+            "tableTitle": "Heparin compared to no heparin in pulmonary embolism",
+            "questionShort": "heparin vs. no heparin in pulmonary embolism",
+            "docType": "question",
+            "version_etr_diagnostic": "1.0",
+            "version_etr_treatment": "1.0",
+            "$tableMode": "regular",
+            "recommendationIds": [],
+            "prevalence3Characteristics": "Typically seen in",
+            "prevalence2Characteristics": "Typically seen in",
+            "prevalence1Characteristics": "Typically seen in",
+            "prevalence1": "0",
+            "pooledSpecificityComparisonRangeTo": null,
+            "pooledSpecificityComparisonRangeFrom": null,
+            "pooledSpecificityRangeTo": null,
+            "pooledSensitivity": null,
+            "sourceOfDxData": null
+        },
+        "guidelineId": "p_ksa_d7c79d83-cc0f-45e6-ad7b-9720215d63ff",
+        "guidelineTitle": "EtD Diagnosis paper"
+    },
+    "attachments": []
+}

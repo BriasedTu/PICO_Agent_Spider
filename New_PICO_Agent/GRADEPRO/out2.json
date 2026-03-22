@@ -1,0 +1,3501 @@
+{
+  "meta": {
+    "input_source": "raw_text",
+    "parse_mode": "document",
+    "sha256_of_raw_html": "d38ca82fc89d28edbe99f0807c74a7bff4960a146e576a0c0f923e7c69daa117"
+  },
+  "raw_html": "<!doctype html>\n<html class=\"no-js\" lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n  <title>Guideline Development Tool - printout</title>\n  <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n  <style media=\"screen,print\" type=\"text/css\">\n    @font-face {\n      font-family: \"GRADE-quality\";\n      src: url();\n      src: url('https://gradepro.org/fonts/GRADE-quality.eot');\n      src: url('https://gradepro.org/fonts/GRADE-quality.eot?#iefix')\n          format('embedded-opentype'),\n        url('https://gradepro.org/fonts/GRADE-quality.woff') format('woff'),\n        url('https://gradepro.org/fonts/GRADE-quality.ttf') format('truetype'),\n        url('https://gradepro.org/fonts/GRADE-quality.svg#GRADE-quality')\n          format('svg');\n      font-weight: normal;\n      font-style: normal;\n    }\n    \n    @media print {\n      @page {\n        size: portrait;\n          \n          \n          \n          \n      }\n    }\n\n    body {\n      -webkit-print-color-adjust:exact;\n      font: normal 8pt 'Arial Narrow', Arial, sans-serif;\n      font-stretch: condensed;\n      color: black;\n      padding:5px;\n      margin:0;\n    }\n\n    sup span.underline {\n      margin: 0;\n      padding: 0;\n      text-decoration: underline;\n    }\n\n    p {\n      margin: 0px;\n    }\n\n    ol {\n      padding-left:15px;\n    }\n\n    span.bold {\n      font-weight: bold;\n    }\n\n    span.cell-value.normal {\n      font-weight: normal;\n    }\n\n    span.cell-value.pt8 {\n      font-size: 8pt;\n    }\n\n    span.label,\n    span.cell {\n      font-weight: normal;\n    }\n\n    span.block.bold {\n      display: block;\n      font-weight: bold;\n    }\n\n    span.outcome-name {\n      font-size: 9pt;\n      margin-top: 5px;\n    }\n\n    span.cell-value {\n      min-height: 30px;\n      max-width: 250px;\n      font-size: 9pt;\n    }\n\n    span.short-name {\n      font-weight: normal;\n    }\n\n    table {\n      border-spacing: 0;\n      border-collapse: collapse;\n      font: normal 8pt 'Arial Narrow', Arial, sans-serif;\n      width: 100%;\n    }\n\n    thead, tfoot { display: table-row-group }\n\n    tr {\n      page-break-inside: avoid !important;\n    }\n\n    td {\n      text-align: left;\n      border-top: solid 1px black;\n      border-bottom: solid 1px black;\n      border-left: 0px;\n      border-right: 0px;\n      word-wrap: break-word;\n    }\n\n    th {\n      position: relative;\n      text-align: left;\n      vertical-align: top;\n    }\n\n    th.grey-cell {\n      border-top: 1px solid #efefef;\n      border-right: 1px solid #efefef;\n      background: #e0e0e0;\n    }\n\n    thead,\n    tbody {\n      border-bottom: solid 2px black;\n    }\n\n    .first-letter:first-letter {\n      text-transform: uppercase;\n     }\n\n    .blue-cell {\n      text-align: left;\n      color: #fff;\n      font-weight: normal;\n      background-color: #3271aa;\n      border-right: 1px solid #efefef;\n    }\n\n    .narrative-desc,\n    .corresponding-risk,\n    .grey-cell,\n    .control,\n    .absolute-effect {\n      vertical-align: top;\n      text-align: left;\n      background-color: #ebebeb;\n    }\n\n    .white-cell {\n      background-color: #ffffff;\n    }\n\n    td.title-cell{\n      border: none;\n    }\n\n    td.info-cell {\n      border-top: solid 2px black;\n      border-bottom: solid 2px black;\n      border-left: 0px;\n      border-right: 0px;\n    }\n\n    td.control-label {\n      background: #e0e0e0;\n      border-color: #000000;\n      font-weight: bold;\n    }\n\n    p.sof-title {\n      font-size: 11pt;\n    }\n\n    p span{\n      font-weight: normal;\n    }\n\n    .not-editable-cell,\n    .normal-font {\n      font-weight: normal;\n    }\n\n    .outcome-label-row {\n      border: none;\n    }\n    .outcome-edit-block {\n      display: none;\n    }\n    .outcomes-table .outcome-label span {\n      margin: 0px 5px;\n    }\n\n    td.outcome-cell,\n    td.relative-effect,\n    td.no-of-participants,\n    td.quality,\n    td.comments {\n      vertical-align: top;\n    }\n\n    td.outcome-cell,\n    td.control,\n    td.absolute-effect,\n    td.relative-effect {\n      font-weight: normal;\n    }\n\n    td.outcome-cell {\n      max-width: 220px;\n    }\n\n    td.quality {\n      width: 75px;\n    }\n\n    .cell-footnotes {\n      font-style: italic;\n      float: right;\n      padding: 2px;\n    }\n\n    .quality-sign {\n        font-family: 'GRADE-quality', Cambria, Helvetica, Arial;\n        font-size: 14px;\n    }\n\n    .control {\n      width: 12%\n    }\n    .with-intervention,\n    .without-intervention,\n    .difference,\n    .risk-difference-with-intervention,\n    .risk-with-control,\n    .corresponding-risk,\n    .relative-effect,\n    .no-of-participants {\n      width: 12%\n    }\n    .what_happens,\n    .comments {\n      width: 26%\n    }\n    .impact {\n      width: 36%\n    }\n\n  </style>\n</head>\n<body><table class=\"outcomes-table \" valign=\"top\" cellpadding=\"5\" width=\"100%\">\n  <thead>\n      <tr>\n        <td colspan=\"6\" class=\"title-cell\">\n          <b>Summary of findings: </b>\n        </td>\n      </tr>\n      <tr>\n        <td colspan=\"6\" class=\"info-cell printout\">\n        <p class=\"sof-title\"><b>Anticoagulation compared to no anticoagulation in pediatric patients with portal vein thrombosis</b></p>\n        </td>\n      </tr>\n      <tr>\n        <td colspan=\"6\" class=\"info-cell question-data\">\n        <div class=\"content\">\n        <div>\n          <b>Patient or population</b>:\n          <label id=\"healthProblemOrPopulation\">pediatric patients with portal vein thrombosis</label>\n          <span class=\"sup\"></span>\n        </div>\n        <div>\n          <b>Setting</b>:\n          <label for=\"settings\">Inpatient</label>\n          <span class=\"sup\"></span>\n        </div>\n        <div>\n          <b>Intervention</b>:\n          <label id=\"intervention\">anticoagulation</label>\n        </div>\n        <div>\n          <b>Comparison</b>:\n          <label id=\"comparison\">no anticoagulation</label>\n        </div>\n\n\n\n\n\n  </div></td>\n      </tr>\n    <tr>\n      <th rowspan=\"2\" class=\"blue-cell\"><p>Outcomes</p></th>\n        <th colspan=\"3\" rowspan=\"2\" class=\"blue-cell impact narrative-header\" style=\"display: table-cell;\">\n          <p>Impact</p>\n        </th>\n      <th rowspan=\"2\" class=\"blue-cell\">\n        <p>№ of participants <br>\n          (studies)\n        </p>\n      </th>\n      <th rowspan=\"2\" class=\"blue-cell\">\n        <p>\n          Certainty of the evidence<br>(GRADE)\n        </p>\n      </th>\n    </tr>\n    <tr>\n    </tr>\n  </thead>\n\n  <tbody class=\"printout-rows\">\n\n  <tr data-view-cid=\"view24119\" class=\"outcome-row outcome-sof-printout-row\" data-item-cid=\"c718\"><td class=\"outcome-cell active\" data-col-no=\"1\" data-property=\"sofOutcomeLabel\">\n  <div class=\"cell-content\">\n      <span><span class=\"label outcome-name\">Mortality<br>follow up: range 1 weeks to 5 years</span></span>\n  </div>\n</td>\n\n        <td data-col-no=\"2\" data-property=\"narrativeDesc\" class=\"narrative-desc impact white-cell\" colspan=\"3\">\n  <div class=\"cell-content\">\n    <span>Studies reported only 16% overall risk of death, with no information for each group separately. In patients with no AC, spontaneous resolution of PVT is reported from 70% to 77% of patients with non-occlusive clots, and 31% to 48% with occlusive clots. One study [Morag 2006] describes 'no association' between AC and poor outcomes. \n    \n    \n    </span>\n  <sup data-reference-number=\"1\" data-reference-id=\"ref_d518be4c52320f6f3a0c5a2790a81b16\">2</sup></div>\n</td>\n\n  <td class=\"no-of-participants\" data-property=\"noOfParticipantsStudies\" data-col-no=\"5\">\n    <div class=\"cell-content\">\n      <span>(3 observational studies)</span>\n    <sup data-reference-number=\"1\" data-reference-id=\"ref_56953eebedaadce2248495a24daeaca8\">1<span class=\"comma\">,</span></sup><sup data-reference-number=\"1\" data-reference-id=\"ref_d518be4c52320f6f3a0c5a2790a81b16\">2<span class=\"comma\">,</span></sup><sup data-reference-number=\"1\" data-reference-id=\"ref_6386c6b60cfd41bf3d548f68509dfaa5\">3</sup></div>\n  </td>\n\n  <td data-col-no=\"6\" data-property=\"quality\" class=\"quality not-editable-cell\">\n    <div class=\"cell-content\">\n      <span><span class=\"quality-sign\">⨁</span><span class=\"quality-sign\">◯</span><span class=\"quality-sign\">◯</span><span class=\"quality-sign\">◯</span><br><span class=\"quality-text\">VERY LOW</span></span>\n    <sup data-footnote-number=\"1\" data-footnote-id=\"1\">a<span class=\"comma\">,</span></sup><sup data-footnote-number=\"1\" data-footnote-id=\"2\">b</sup></div>\n  </td>\n\n</tr><tr data-view-cid=\"view24184\" class=\"outcome-row outcome-sof-printout-row\" data-item-cid=\"c719\"><td class=\"outcome-cell\" data-col-no=\"1\" data-property=\"sofOutcomeLabel\">\n  <div class=\"cell-content\">\n      <span><span class=\"label outcome-name\">Neonatal Bleeding –Severe (reported as 'major bleeding')<br>assessed with: clinical assessment<br>follow up: range 1 weeks to 12 weeks</span></span>\n  </div>\n</td>\n\n        <td data-col-no=\"2\" data-property=\"narrativeDesc\" class=\"narrative-desc impact white-cell\" colspan=\"3\">\n  <div class=\"cell-content\">\n    <span>The rate of major bleedings in all patients with PVT varies from 4.5% to 80%, and it's mostly related to esophageal varices and portal hypertension. Studies did not report bleeding events separately in those receiving and not receiving anticoagulation. [Morag 2006, Alvares 1983, Peter 2003] The rate of bleeding (from other pediatric populations) ranges from 3% to 5% with LMWH, UFH or VKA. [Ignjatovic 2010, Massicotte 2003] \n    </span>\n  </div>\n</td>\n\n  <td class=\"no-of-participants\" data-property=\"noOfParticipantsStudies\" data-col-no=\"5\">\n    <div class=\"cell-content\">\n      <span>(5 observational studies)</span>\n    <sup data-reference-number=\"1\" data-reference-id=\"ref_d518be4c52320f6f3a0c5a2790a81b16\">2<span class=\"comma\">,</span></sup><sup data-reference-number=\"1\" data-reference-id=\"ref_0182411639a352a02b246719063701d0\">4<span class=\"comma\">,</span></sup><sup data-reference-number=\"1\" data-reference-id=\"ref_d96cb072f31048e1cfdaace4f572b66d\">5</sup></div>\n  </td>\n\n  <td data-col-no=\"6\" data-property=\"quality\" class=\"quality not-editable-cell\">\n    <div class=\"cell-content\">\n      <span><span class=\"quality-sign\">⨁</span><span class=\"quality-sign\">◯</span><span class=\"quality-sign\">◯</span><span class=\"quality-sign\">◯</span><br><span class=\"quality-text\">VERY LOW</span></span>\n    <sup data-footnote-number=\"1\" data-footnote-id=\"2\">b<span class=\"comma\">,</span></sup><sup data-footnote-number=\"1\" data-footnote-id=\"3\">c<span class=\"comma\">,</span></sup><sup data-footnote-number=\"1\" data-footnote-id=\"4\">d</sup></div>\n  </td>\n\n</tr><tr data-view-cid=\"view24249\" class=\"outcome-row outcome-sof-printout-row\" data-item-cid=\"c720\"><td class=\"outcome-cell\" data-col-no=\"1\" data-property=\"sofOutcomeLabel\">\n  <div class=\"cell-content\">\n      <span><span class=\"label outcome-name\">Portal vein thrombosis (described as any VTE or 'no resolution' of the PVT)<br>assessed with: clinical diagnosis and imaging<br>follow up: range 1 weeks to 12 weeks</span></span>\n  </div>\n</td>\n\n        <td data-col-no=\"2\" data-property=\"narrativeDesc\" class=\"narrative-desc impact white-cell\" colspan=\"3\">\n  <div class=\"cell-content\">\n    <span>The rate of thrombotic events on each group of study is unknown. There is no distinction between groups on thrombotic outcomes. [Morag 2006] In patients with no AC, spontaneous resolution of PVT occurs in 70% to 77% of patients with non-occlusive clots, and 31% to 48% in those with occlusive clots. The same study describes 'no association' between AC and poor outcomes. </span>\n  </div>\n</td>\n\n  <td class=\"no-of-participants\" data-property=\"noOfParticipantsStudies\" data-col-no=\"5\">\n    <div class=\"cell-content\">\n      <span>(1 observational study)</span>\n    <sup data-reference-number=\"1\" data-reference-id=\"ref_d518be4c52320f6f3a0c5a2790a81b16\">2</sup></div>\n  </td>\n\n  <td data-col-no=\"6\" data-property=\"quality\" class=\"quality not-editable-cell\">\n    <div class=\"cell-content\">\n      <span><span class=\"quality-sign\">⨁</span><span class=\"quality-sign\">◯</span><span class=\"quality-sign\">◯</span><span class=\"quality-sign\">◯</span><br><span class=\"quality-text\">VERY LOW</span></span>\n    <sup data-footnote-number=\"1\" data-footnote-id=\"2\">b<span class=\"comma\">,</span></sup><sup data-footnote-number=\"1\" data-footnote-id=\"3\">c</sup></div>\n  </td>\n\n</tr><tr data-view-cid=\"view24314\" class=\"outcome-row outcome-sof-printout-row\" data-item-cid=\"c721\"><td class=\"outcome-cell\" data-col-no=\"1\" data-property=\"sofOutcomeLabel\">\n  <div class=\"cell-content\">\n      <span><span class=\"label outcome-name\">Heparin induced thrombocytopenia</span></span>\n  </div>\n</td>\n\n        <td data-col-no=\"2\" data-property=\"narrativeDesc\" class=\"narrative-desc impact white-cell\" colspan=\"3\">\n  <div class=\"cell-content\">\n    <span>Two observational studies reported the risk of HIT varies for pediatric patients. The risk is estimated to be close to 0% in children receiving standard heparin or LMWH. The risk of HIT is 2.3% (14/612) in children receiving heparin in the PICU. [Newall 2003; Schmugge 2002]\n    </span>\n  </div>\n</td>\n\n  <td class=\"no-of-participants\" data-property=\"noOfParticipantsStudies\" data-col-no=\"5\">\n    <div class=\"cell-content\">\n      <span>(2 observational studies)</span>\n    <sup data-reference-number=\"1\" data-reference-id=\"ref_3b207f9cc2d420dafa04fa3eb3f9e17a\">6<span class=\"comma\">,</span></sup><sup data-reference-number=\"1\" data-reference-id=\"ref_3c1753f64af0093b48edcb51afc39ea1\">7</sup></div>\n  </td>\n\n  <td data-col-no=\"6\" data-property=\"quality\" class=\"quality not-editable-cell\">\n    <div class=\"cell-content\">\n      <span><span class=\"quality-sign\">⨁</span><span class=\"quality-sign\">◯</span><span class=\"quality-sign\">◯</span><span class=\"quality-sign\">◯</span><br><span class=\"quality-text\">VERY LOW</span></span>\n    <sup data-footnote-number=\"1\" data-footnote-id=\"6\">e</sup></div>\n  </td>\n\n</tr></tbody>\n  <tbody>\n    <tr>\n      <td colspan=\"6\">\n        *<b>The risk in the intervention group</b> (and its 95% confidence interval) is based on the assumed risk in the comparison group and the <b>relative effect</b> of the intervention (and its 95% CI).\n        <br>\n        <br>\n        <b>CI:</b> Confidence interval\n      </td>\n    </tr>\n  </tbody>\n  <tbody>\n    <tr>\n      <td colspan=\"6\">\n        <b>GRADE Working Group grades of evidence</b><br> <b>High certainty:</b> We are very confident that the true effect lies close to that of the estimate of the effect<br> <b>Moderate certainty:</b> We are moderately confident in the effect estimate: The true effect is likely to be close to the estimate of the effect, but there is a possibility that it is substantially different<br><b>Low certainty:</b> Our confidence in the effect estimate is limited: The true effect may be substantially different from the estimate of the effect<br><b>Very low certainty:</b> We have very little confidence in the effect estimate: The true effect is likely to be substantially different from the estimate of effect\n      </td>\n    </tr>\n  </tbody>\n</table>\n\n    <h4>References</h4>\n    <div class=\"footnotes-list\">\n        <div>\n          <span>1. </span>\n          <span>Kim JH, Lee YS,Kim SH,Lee SK,Lim MK,Kim HS. Does umbilical vein catheterization lead to portal venous thrombosis? Prospective US evaluation in 100 neonates. Radiology. 2001;219:645-50..</span>\n        </div>\n        <div>\n          <span>2. </span>\n          <span>Morag I, Epelman M,Daneman A,Moineddin R,Parvez B,Shechter T,et al. Portal vein thrombosis in the neonate: risk factors, course, and outcome. J Pediatr. 2006;148:735-9..</span>\n        </div>\n        <div>\n          <span>3. </span>\n          <span>Schwartz, DS, Gettner, PA, Konstantino, MM, Bartley, CL, Keller, MS, Ehrenkranz, RA. Umbilical venous catheterization and the risk of portal vein thrombosis. J Pediatr; 1997.</span>\n        </div>\n        <div>\n          <span>4. </span>\n          <span>Alvarez, F, Bernard, O, Brunelle, F, Hadchouel, P, Odievre, M, Alagille, D. Portal obstruction in children. Clinical investigation and hemorrhage risk. J Pediatr; 1983.</span>\n        </div>\n        <div>\n          <span>5. </span>\n          <span>Ignjatovic, V, Najid, S, Newall, F. Dosing and monitoring of enoxaparin (Low molecular weight heparin) therapy in children. Br J Haematol; 2010.</span>\n        </div>\n        <div>\n          <span>6. </span>\n          <span>Newall F, Barnes C,Ignjatovic V,Monagle P. Heparin-induced thrombocytopenia in children. J Paediatr Child Health. 2003;39:289-92..</span>\n        </div>\n        <div>\n          <span>7. </span>\n          <span>Schmugge M, Risch L,Huber AR,Benn A,Fischer JE. Heparin-induced thrombocytopenia-associated thrombosis in pediatric intensive care patients. Pediatrics. 2002;109:E10..</span>\n        </div>\n    </div>\n</body>\n</html>\n\",\n            \"comparison\": \"no anticoagulation",
+  "tables_matrix": [
+    {
+      "xpath": "/html[1]/body/table",
+      "rows": [
+        [
+          "Summary of findings:"
+        ],
+        [
+          "Anticoagulation compared to no anticoagulation in pediatric patients with portal vein thrombosis"
+        ],
+        [
+          "Patient or population:\n          pediatric patients with portal vein thrombosis\n          \n        \n        \n          Setting:\n          Inpatient\n          \n        \n        \n          Intervention:\n          anticoagulation\n        \n        \n          Comparison:\n          no anticoagulation"
+        ],
+        [
+          "Outcomes",
+          "Impact",
+          "№ of participants \n          (studies)",
+          "Certainty of the evidence(GRADE)"
+        ],
+        [],
+        [
+          "Mortalityfollow up: range 1 weeks to 5 years",
+          "Studies reported only 16% overall risk of death, with no information for each group separately. In patients with no AC, spontaneous resolution of PVT is reported from 70% to 77% of patients with non-occlusive clots, and 31% to 48% with occlusive clots. One study [Morag 2006] describes 'no association' between AC and poor outcomes. \n    \n    \n    \n  2",
+          "(3 observational studies)\n    1,2,3",
+          "⨁◯◯◯VERY LOW\n    a,b"
+        ],
+        [
+          "Neonatal Bleeding –Severe (reported as 'major bleeding')assessed with: clinical assessmentfollow up: range 1 weeks to 12 weeks",
+          "The rate of major bleedings in all patients with PVT varies from 4.5% to 80%, and it's mostly related to esophageal varices and portal hypertension. Studies did not report bleeding events separately in those receiving and not receiving anticoagulation. [Morag 2006, Alvares 1983, Peter 2003] The rate of bleeding (from other pediatric populations) ranges from 3% to 5% with LMWH, UFH or VKA. [Ignjatovic 2010, Massicotte 2003]",
+          "(5 observational studies)\n    2,4,5",
+          "⨁◯◯◯VERY LOW\n    b,c,d"
+        ],
+        [
+          "Portal vein thrombosis (described as any VTE or 'no resolution' of the PVT)assessed with: clinical diagnosis and imagingfollow up: range 1 weeks to 12 weeks",
+          "The rate of thrombotic events on each group of study is unknown. There is no distinction between groups on thrombotic outcomes. [Morag 2006] In patients with no AC, spontaneous resolution of PVT occurs in 70% to 77% of patients with non-occlusive clots, and 31% to 48% in those with occlusive clots. The same study describes 'no association' between AC and poor outcomes.",
+          "(1 observational study)\n    2",
+          "⨁◯◯◯VERY LOW\n    b,c"
+        ],
+        [
+          "Heparin induced thrombocytopenia",
+          "Two observational studies reported the risk of HIT varies for pediatric patients. The risk is estimated to be close to 0% in children receiving standard heparin or LMWH. The risk of HIT is 2.3% (14/612) in children receiving heparin in the PICU. [Newall 2003; Schmugge 2002]",
+          "(2 observational studies)\n    6,7",
+          "⨁◯◯◯VERY LOW\n    e"
+        ],
+        [
+          "*The risk in the intervention group (and its 95% confidence interval) is based on the assumed risk in the comparison group and the relative effect of the intervention (and its 95% CI).\n        \n        \n        CI: Confidence interval"
+        ],
+        [
+          "GRADE Working Group grades of evidence High certainty: We are very confident that the true effect lies close to that of the estimate of the effect Moderate certainty: We are moderately confident in the effect estimate: The true effect is likely to be close to the estimate of the effect, but there is a possibility that it is substantially differentLow certainty: Our confidence in the effect estimate is limited: The true effect may be substantially different from the estimate of the effectVery low certainty: We have very little confidence in the effect estimate: The true effect is likely to be substantially different from the estimate of effect"
+        ]
+      ],
+      "class": "outcomes-table "
+    }
+  ],
+  "extracted": {
+    "summary_of_judgements": null,
+    "type_of_recommendation": null,
+    "conclusions": null
+  },
+  "events": [
+    {
+      "type": "start",
+      "xpath": "/html[1]",
+      "tag": "html",
+      "attrs": {
+        "class": "no-js",
+        "lang": "en"
+      },
+      "text": "\n"
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/head",
+      "tag": "head",
+      "attrs": {},
+      "text": "\n  "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/head/meta[1]",
+      "tag": "meta",
+      "attrs": {
+        "charset": "utf-8"
+      },
+      "text": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/head/meta[1]",
+      "tag": "meta",
+      "attrs": {
+        "charset": "utf-8"
+      },
+      "tail": "\n  "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/head/meta[2]",
+      "tag": "meta",
+      "attrs": {
+        "http-equiv": "X-UA-Compatible",
+        "content": "IE=edge,chrome=1"
+      },
+      "text": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/head/meta[2]",
+      "tag": "meta",
+      "attrs": {
+        "http-equiv": "X-UA-Compatible",
+        "content": "IE=edge,chrome=1"
+      },
+      "tail": "\n  "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/head/title",
+      "tag": "title",
+      "attrs": {},
+      "text": "Guideline Development Tool - printout"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/head/title",
+      "tag": "title",
+      "attrs": {},
+      "tail": "\n  "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/head/meta[3]",
+      "tag": "meta",
+      "attrs": {
+        "name": "viewport",
+        "content": "width=device-width,initial-scale=1"
+      },
+      "text": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/head/meta[3]",
+      "tag": "meta",
+      "attrs": {
+        "name": "viewport",
+        "content": "width=device-width,initial-scale=1"
+      },
+      "tail": "\n  "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/head/style",
+      "tag": "style",
+      "attrs": {
+        "media": "screen,print",
+        "type": "text/css"
+      },
+      "text": "\n    @font-face {\n      font-family: \"GRADE-quality\";\n      src: url();\n      src: url('https://gradepro.org/fonts/GRADE-quality.eot');\n      src: url('https://gradepro.org/fonts/GRADE-quality.eot?#iefix')\n          format('embedded-opentype'),\n        url('https://gradepro.org/fonts/GRADE-quality.woff') format('woff'),\n        url('https://gradepro.org/fonts/GRADE-quality.ttf') format('truetype'),\n        url('https://gradepro.org/fonts/GRADE-quality.svg#GRADE-quality')\n          format('svg');\n      font-weight: normal;\n      font-style: normal;\n    }\n    \n    @media print {\n      @page {\n        size: portrait;\n          \n          \n          \n          \n      }\n    }\n\n    body {\n      -webkit-print-color-adjust:exact;\n      font: normal 8pt 'Arial Narrow', Arial, sans-serif;\n      font-stretch: condensed;\n      color: black;\n      padding:5px;\n      margin:0;\n    }\n\n    sup span.underline {\n      margin: 0;\n      padding: 0;\n      text-decoration: underline;\n    }\n\n    p {\n      margin: 0px;\n    }\n\n    ol {\n      padding-left:15px;\n    }\n\n    span.bold {\n      font-weight: bold;\n    }\n\n    span.cell-value.normal {\n      font-weight: normal;\n    }\n\n    span.cell-value.pt8 {\n      font-size: 8pt;\n    }\n\n    span.label,\n    span.cell {\n      font-weight: normal;\n    }\n\n    span.block.bold {\n      display: block;\n      font-weight: bold;\n    }\n\n    span.outcome-name {\n      font-size: 9pt;\n      margin-top: 5px;\n    }\n\n    span.cell-value {\n      min-height: 30px;\n      max-width: 250px;\n      font-size: 9pt;\n    }\n\n    span.short-name {\n      font-weight: normal;\n    }\n\n    table {\n      border-spacing: 0;\n      border-collapse: collapse;\n      font: normal 8pt 'Arial Narrow', Arial, sans-serif;\n      width: 100%;\n    }\n\n    thead, tfoot { display: table-row-group }\n\n    tr {\n      page-break-inside: avoid !important;\n    }\n\n    td {\n      text-align: left;\n      border-top: solid 1px black;\n      border-bottom: solid 1px black;\n      border-left: 0px;\n      border-right: 0px;\n      word-wrap: break-word;\n    }\n\n    th {\n      position: relative;\n      text-align: left;\n      vertical-align: top;\n    }\n\n    th.grey-cell {\n      border-top: 1px solid #efefef;\n      border-right: 1px solid #efefef;\n      background: #e0e0e0;\n    }\n\n    thead,\n    tbody {\n      border-bottom: solid 2px black;\n    }\n\n    .first-letter:first-letter {\n      text-transform: uppercase;\n     }\n\n    .blue-cell {\n      text-align: left;\n      color: #fff;\n      font-weight: normal;\n      background-color: #3271aa;\n      border-right: 1px solid #efefef;\n    }\n\n    .narrative-desc,\n    .corresponding-risk,\n    .grey-cell,\n    .control,\n    .absolute-effect {\n      vertical-align: top;\n      text-align: left;\n      background-color: #ebebeb;\n    }\n\n    .white-cell {\n      background-color: #ffffff;\n    }\n\n    td.title-cell{\n      border: none;\n    }\n\n    td.info-cell {\n      border-top: solid 2px black;\n      border-bottom: solid 2px black;\n      border-left: 0px;\n      border-right: 0px;\n    }\n\n    td.control-label {\n      background: #e0e0e0;\n      border-color: #000000;\n      font-weight: bold;\n    }\n\n    p.sof-title {\n      font-size: 11pt;\n    }\n\n    p span{\n      font-weight: normal;\n    }\n\n    .not-editable-cell,\n    .normal-font {\n      font-weight: normal;\n    }\n\n    .outcome-label-row {\n      border: none;\n    }\n    .outcome-edit-block {\n      display: none;\n    }\n    .outcomes-table .outcome-label span {\n      margin: 0px 5px;\n    }\n\n    td.outcome-cell,\n    td.relative-effect,\n    td.no-of-participants,\n    td.quality,\n    td.comments {\n      vertical-align: top;\n    }\n\n    td.outcome-cell,\n    td.control,\n    td.absolute-effect,\n    td.relative-effect {\n      font-weight: normal;\n    }\n\n    td.outcome-cell {\n      max-width: 220px;\n    }\n\n    td.quality {\n      width: 75px;\n    }\n\n    .cell-footnotes {\n      font-style: italic;\n      float: right;\n      padding: 2px;\n    }\n\n    .quality-sign {\n        font-family: 'GRADE-quality', Cambria, Helvetica, Arial;\n        font-size: 14px;\n    }\n\n    .control {\n      width: 12%\n    }\n    .with-intervention,\n    .without-intervention,\n    .difference,\n    .risk-difference-with-intervention,\n    .risk-with-control,\n    .corresponding-risk,\n    .relative-effect,\n    .no-of-participants {\n      width: 12%\n    }\n    .what_happens,\n    .comments {\n      width: 26%\n    }\n    .impact {\n      width: 36%\n    }\n\n  "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/head/style",
+      "tag": "style",
+      "attrs": {
+        "media": "screen,print",
+        "type": "text/css"
+      },
+      "tail": "\n"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/head",
+      "tag": "head",
+      "attrs": {},
+      "tail": "\n"
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body",
+      "tag": "body",
+      "attrs": {},
+      "text": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table",
+      "tag": "table",
+      "attrs": {
+        "class": "outcomes-table ",
+        "valign": "top",
+        "cellpadding": "5",
+        "width": "100%"
+      },
+      "text": "\n  "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead",
+      "tag": "thead",
+      "attrs": {},
+      "text": "\n      "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[1]",
+      "tag": "tr",
+      "attrs": {},
+      "text": "\n        "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[1]/td",
+      "tag": "td",
+      "attrs": {
+        "colspan": "6",
+        "class": "title-cell"
+      },
+      "text": "\n          "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[1]/td/b",
+      "tag": "b",
+      "attrs": {},
+      "text": "Summary of findings: "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[1]/td/b",
+      "tag": "b",
+      "attrs": {},
+      "tail": "\n        "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[1]/td",
+      "tag": "td",
+      "attrs": {
+        "colspan": "6",
+        "class": "title-cell"
+      },
+      "tail": "\n      "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[1]",
+      "tag": "tr",
+      "attrs": {},
+      "tail": "\n      "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[2]",
+      "tag": "tr",
+      "attrs": {},
+      "text": "\n        "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[2]/td",
+      "tag": "td",
+      "attrs": {
+        "colspan": "6",
+        "class": "info-cell printout"
+      },
+      "text": "\n        "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[2]/td/p",
+      "tag": "p",
+      "attrs": {
+        "class": "sof-title"
+      },
+      "text": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[2]/td/p/b",
+      "tag": "b",
+      "attrs": {},
+      "text": "Anticoagulation compared to no anticoagulation in pediatric patients with portal vein thrombosis"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[2]/td/p/b",
+      "tag": "b",
+      "attrs": {},
+      "tail": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[2]/td/p",
+      "tag": "p",
+      "attrs": {
+        "class": "sof-title"
+      },
+      "tail": "\n        "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[2]/td",
+      "tag": "td",
+      "attrs": {
+        "colspan": "6",
+        "class": "info-cell printout"
+      },
+      "tail": "\n      "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[2]",
+      "tag": "tr",
+      "attrs": {},
+      "tail": "\n      "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[3]",
+      "tag": "tr",
+      "attrs": {},
+      "text": "\n        "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[3]/td",
+      "tag": "td",
+      "attrs": {
+        "colspan": "6",
+        "class": "info-cell question-data"
+      },
+      "text": "\n        "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[3]/td/div",
+      "tag": "div",
+      "attrs": {
+        "class": "content"
+      },
+      "text": "\n        "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[3]/td/div/div[1]",
+      "tag": "div",
+      "attrs": {},
+      "text": "\n          "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[3]/td/div/div[1]/b",
+      "tag": "b",
+      "attrs": {},
+      "text": "Patient or population"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[3]/td/div/div[1]/b",
+      "tag": "b",
+      "attrs": {},
+      "tail": ":\n          "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[3]/td/div/div[1]/label",
+      "tag": "label",
+      "attrs": {
+        "id": "healthProblemOrPopulation"
+      },
+      "text": "pediatric patients with portal vein thrombosis"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[3]/td/div/div[1]/label",
+      "tag": "label",
+      "attrs": {
+        "id": "healthProblemOrPopulation"
+      },
+      "tail": "\n          "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[3]/td/div/div[1]/span",
+      "tag": "span",
+      "attrs": {
+        "class": "sup"
+      },
+      "text": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[3]/td/div/div[1]/span",
+      "tag": "span",
+      "attrs": {
+        "class": "sup"
+      },
+      "tail": "\n        "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[3]/td/div/div[1]",
+      "tag": "div",
+      "attrs": {},
+      "tail": "\n        "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[3]/td/div/div[2]",
+      "tag": "div",
+      "attrs": {},
+      "text": "\n          "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[3]/td/div/div[2]/b",
+      "tag": "b",
+      "attrs": {},
+      "text": "Setting"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[3]/td/div/div[2]/b",
+      "tag": "b",
+      "attrs": {},
+      "tail": ":\n          "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[3]/td/div/div[2]/label",
+      "tag": "label",
+      "attrs": {
+        "for": "settings"
+      },
+      "text": "Inpatient"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[3]/td/div/div[2]/label",
+      "tag": "label",
+      "attrs": {
+        "for": "settings"
+      },
+      "tail": "\n          "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[3]/td/div/div[2]/span",
+      "tag": "span",
+      "attrs": {
+        "class": "sup"
+      },
+      "text": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[3]/td/div/div[2]/span",
+      "tag": "span",
+      "attrs": {
+        "class": "sup"
+      },
+      "tail": "\n        "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[3]/td/div/div[2]",
+      "tag": "div",
+      "attrs": {},
+      "tail": "\n        "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[3]/td/div/div[3]",
+      "tag": "div",
+      "attrs": {},
+      "text": "\n          "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[3]/td/div/div[3]/b",
+      "tag": "b",
+      "attrs": {},
+      "text": "Intervention"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[3]/td/div/div[3]/b",
+      "tag": "b",
+      "attrs": {},
+      "tail": ":\n          "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[3]/td/div/div[3]/label",
+      "tag": "label",
+      "attrs": {
+        "id": "intervention"
+      },
+      "text": "anticoagulation"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[3]/td/div/div[3]/label",
+      "tag": "label",
+      "attrs": {
+        "id": "intervention"
+      },
+      "tail": "\n        "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[3]/td/div/div[3]",
+      "tag": "div",
+      "attrs": {},
+      "tail": "\n        "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[3]/td/div/div[4]",
+      "tag": "div",
+      "attrs": {},
+      "text": "\n          "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[3]/td/div/div[4]/b",
+      "tag": "b",
+      "attrs": {},
+      "text": "Comparison"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[3]/td/div/div[4]/b",
+      "tag": "b",
+      "attrs": {},
+      "tail": ":\n          "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[3]/td/div/div[4]/label",
+      "tag": "label",
+      "attrs": {
+        "id": "comparison"
+      },
+      "text": "no anticoagulation"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[3]/td/div/div[4]/label",
+      "tag": "label",
+      "attrs": {
+        "id": "comparison"
+      },
+      "tail": "\n        "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[3]/td/div/div[4]",
+      "tag": "div",
+      "attrs": {},
+      "tail": "\n\n\n\n\n\n  "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[3]/td/div",
+      "tag": "div",
+      "attrs": {
+        "class": "content"
+      },
+      "tail": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[3]/td",
+      "tag": "td",
+      "attrs": {
+        "colspan": "6",
+        "class": "info-cell question-data"
+      },
+      "tail": "\n      "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[3]",
+      "tag": "tr",
+      "attrs": {},
+      "tail": "\n    "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[4]",
+      "tag": "tr",
+      "attrs": {},
+      "text": "\n      "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[4]/th[1]",
+      "tag": "th",
+      "attrs": {
+        "rowspan": "2",
+        "class": "blue-cell"
+      },
+      "text": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[4]/th[1]/p",
+      "tag": "p",
+      "attrs": {},
+      "text": "Outcomes"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[4]/th[1]/p",
+      "tag": "p",
+      "attrs": {},
+      "tail": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[4]/th[1]",
+      "tag": "th",
+      "attrs": {
+        "rowspan": "2",
+        "class": "blue-cell"
+      },
+      "tail": "\n        "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[4]/th[2]",
+      "tag": "th",
+      "attrs": {
+        "colspan": "3",
+        "rowspan": "2",
+        "class": "blue-cell impact narrative-header",
+        "style": "display: table-cell;"
+      },
+      "text": "\n          "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[4]/th[2]/p",
+      "tag": "p",
+      "attrs": {},
+      "text": "Impact"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[4]/th[2]/p",
+      "tag": "p",
+      "attrs": {},
+      "tail": "\n        "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[4]/th[2]",
+      "tag": "th",
+      "attrs": {
+        "colspan": "3",
+        "rowspan": "2",
+        "class": "blue-cell impact narrative-header",
+        "style": "display: table-cell;"
+      },
+      "tail": "\n      "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[4]/th[3]",
+      "tag": "th",
+      "attrs": {
+        "rowspan": "2",
+        "class": "blue-cell"
+      },
+      "text": "\n        "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[4]/th[3]/p",
+      "tag": "p",
+      "attrs": {},
+      "text": "№ of participants "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[4]/th[3]/p/br",
+      "tag": "br",
+      "attrs": {},
+      "text": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[4]/th[3]/p/br",
+      "tag": "br",
+      "attrs": {},
+      "tail": "\n          (studies)\n        "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[4]/th[3]/p",
+      "tag": "p",
+      "attrs": {},
+      "tail": "\n      "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[4]/th[3]",
+      "tag": "th",
+      "attrs": {
+        "rowspan": "2",
+        "class": "blue-cell"
+      },
+      "tail": "\n      "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[4]/th[4]",
+      "tag": "th",
+      "attrs": {
+        "rowspan": "2",
+        "class": "blue-cell"
+      },
+      "text": "\n        "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[4]/th[4]/p",
+      "tag": "p",
+      "attrs": {},
+      "text": "\n          Certainty of the evidence"
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[4]/th[4]/p/br",
+      "tag": "br",
+      "attrs": {},
+      "text": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[4]/th[4]/p/br",
+      "tag": "br",
+      "attrs": {},
+      "tail": "(GRADE)\n        "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[4]/th[4]/p",
+      "tag": "p",
+      "attrs": {},
+      "tail": "\n      "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[4]/th[4]",
+      "tag": "th",
+      "attrs": {
+        "rowspan": "2",
+        "class": "blue-cell"
+      },
+      "tail": "\n    "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[4]",
+      "tag": "tr",
+      "attrs": {},
+      "tail": "\n    "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/thead/tr[5]",
+      "tag": "tr",
+      "attrs": {},
+      "text": "\n    "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead/tr[5]",
+      "tag": "tr",
+      "attrs": {},
+      "tail": "\n  "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/thead",
+      "tag": "thead",
+      "attrs": {},
+      "tail": "\n\n  "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]",
+      "tag": "tbody",
+      "attrs": {
+        "class": "printout-rows"
+      },
+      "text": "\n\n  "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]",
+      "tag": "tr",
+      "attrs": {
+        "data-view-cid": "view24119",
+        "class": "outcome-row outcome-sof-printout-row",
+        "data-item-cid": "c718"
+      },
+      "text": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[1]",
+      "tag": "td",
+      "attrs": {
+        "class": "outcome-cell active",
+        "data-col-no": "1",
+        "data-property": "sofOutcomeLabel"
+      },
+      "text": "\n  "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[1]/div",
+      "tag": "div",
+      "attrs": {
+        "class": "cell-content"
+      },
+      "text": "\n      "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[1]/div/span",
+      "tag": "span",
+      "attrs": {},
+      "text": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[1]/div/span/span",
+      "tag": "span",
+      "attrs": {
+        "class": "label outcome-name"
+      },
+      "text": "Mortality"
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[1]/div/span/span/br",
+      "tag": "br",
+      "attrs": {},
+      "text": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[1]/div/span/span/br",
+      "tag": "br",
+      "attrs": {},
+      "tail": "follow up: range 1 weeks to 5 years"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[1]/div/span/span",
+      "tag": "span",
+      "attrs": {
+        "class": "label outcome-name"
+      },
+      "tail": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[1]/div/span",
+      "tag": "span",
+      "attrs": {},
+      "tail": "\n  "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[1]/div",
+      "tag": "div",
+      "attrs": {
+        "class": "cell-content"
+      },
+      "tail": "\n"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[1]",
+      "tag": "td",
+      "attrs": {
+        "class": "outcome-cell active",
+        "data-col-no": "1",
+        "data-property": "sofOutcomeLabel"
+      },
+      "tail": "\n\n        "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[2]",
+      "tag": "td",
+      "attrs": {
+        "data-col-no": "2",
+        "data-property": "narrativeDesc",
+        "class": "narrative-desc impact white-cell",
+        "colspan": "3"
+      },
+      "text": "\n  "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[2]/div",
+      "tag": "div",
+      "attrs": {
+        "class": "cell-content"
+      },
+      "text": "\n    "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[2]/div/span",
+      "tag": "span",
+      "attrs": {},
+      "text": "Studies reported only 16% overall risk of death, with no information for each group separately. In patients with no AC, spontaneous resolution of PVT is reported from 70% to 77% of patients with non-occlusive clots, and 31% to 48% with occlusive clots. One study [Morag 2006] describes 'no association' between AC and poor outcomes. \n    \n    \n    "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[2]/div/span",
+      "tag": "span",
+      "attrs": {},
+      "tail": "\n  "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[2]/div/sup",
+      "tag": "sup",
+      "attrs": {
+        "data-reference-number": "1",
+        "data-reference-id": "ref_d518be4c52320f6f3a0c5a2790a81b16"
+      },
+      "text": "2"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[2]/div/sup",
+      "tag": "sup",
+      "attrs": {
+        "data-reference-number": "1",
+        "data-reference-id": "ref_d518be4c52320f6f3a0c5a2790a81b16"
+      },
+      "tail": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[2]/div",
+      "tag": "div",
+      "attrs": {
+        "class": "cell-content"
+      },
+      "tail": "\n"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[2]",
+      "tag": "td",
+      "attrs": {
+        "data-col-no": "2",
+        "data-property": "narrativeDesc",
+        "class": "narrative-desc impact white-cell",
+        "colspan": "3"
+      },
+      "tail": "\n\n  "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[3]",
+      "tag": "td",
+      "attrs": {
+        "class": "no-of-participants",
+        "data-property": "noOfParticipantsStudies",
+        "data-col-no": "5"
+      },
+      "text": "\n    "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[3]/div",
+      "tag": "div",
+      "attrs": {
+        "class": "cell-content"
+      },
+      "text": "\n      "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[3]/div/span",
+      "tag": "span",
+      "attrs": {},
+      "text": "(3 observational studies)"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[3]/div/span",
+      "tag": "span",
+      "attrs": {},
+      "tail": "\n    "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[3]/div/sup[1]",
+      "tag": "sup",
+      "attrs": {
+        "data-reference-number": "1",
+        "data-reference-id": "ref_56953eebedaadce2248495a24daeaca8"
+      },
+      "text": "1"
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[3]/div/sup[1]/span",
+      "tag": "span",
+      "attrs": {
+        "class": "comma"
+      },
+      "text": ","
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[3]/div/sup[1]/span",
+      "tag": "span",
+      "attrs": {
+        "class": "comma"
+      },
+      "tail": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[3]/div/sup[1]",
+      "tag": "sup",
+      "attrs": {
+        "data-reference-number": "1",
+        "data-reference-id": "ref_56953eebedaadce2248495a24daeaca8"
+      },
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[3]/div/sup[2]",
+      "tag": "sup",
+      "attrs": {
+        "data-reference-number": "1",
+        "data-reference-id": "ref_d518be4c52320f6f3a0c5a2790a81b16"
+      },
+      "text": "2"
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[3]/div/sup[2]/span",
+      "tag": "span",
+      "attrs": {
+        "class": "comma"
+      },
+      "text": ","
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[3]/div/sup[2]/span",
+      "tag": "span",
+      "attrs": {
+        "class": "comma"
+      },
+      "tail": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[3]/div/sup[2]",
+      "tag": "sup",
+      "attrs": {
+        "data-reference-number": "1",
+        "data-reference-id": "ref_d518be4c52320f6f3a0c5a2790a81b16"
+      },
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[3]/div/sup[3]",
+      "tag": "sup",
+      "attrs": {
+        "data-reference-number": "1",
+        "data-reference-id": "ref_6386c6b60cfd41bf3d548f68509dfaa5"
+      },
+      "text": "3"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[3]/div/sup[3]",
+      "tag": "sup",
+      "attrs": {
+        "data-reference-number": "1",
+        "data-reference-id": "ref_6386c6b60cfd41bf3d548f68509dfaa5"
+      },
+      "tail": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[3]/div",
+      "tag": "div",
+      "attrs": {
+        "class": "cell-content"
+      },
+      "tail": "\n  "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[3]",
+      "tag": "td",
+      "attrs": {
+        "class": "no-of-participants",
+        "data-property": "noOfParticipantsStudies",
+        "data-col-no": "5"
+      },
+      "tail": "\n\n  "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[4]",
+      "tag": "td",
+      "attrs": {
+        "data-col-no": "6",
+        "data-property": "quality",
+        "class": "quality not-editable-cell"
+      },
+      "text": "\n    "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[4]/div",
+      "tag": "div",
+      "attrs": {
+        "class": "cell-content"
+      },
+      "text": "\n      "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[4]/div/span",
+      "tag": "span",
+      "attrs": {},
+      "text": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[4]/div/span/span[1]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-sign"
+      },
+      "text": "⨁"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[4]/div/span/span[1]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-sign"
+      },
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[4]/div/span/span[2]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-sign"
+      },
+      "text": "◯"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[4]/div/span/span[2]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-sign"
+      },
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[4]/div/span/span[3]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-sign"
+      },
+      "text": "◯"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[4]/div/span/span[3]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-sign"
+      },
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[4]/div/span/span[4]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-sign"
+      },
+      "text": "◯"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[4]/div/span/span[4]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-sign"
+      },
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[4]/div/span/br",
+      "tag": "br",
+      "attrs": {},
+      "text": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[4]/div/span/br",
+      "tag": "br",
+      "attrs": {},
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[4]/div/span/span[5]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-text"
+      },
+      "text": "VERY LOW"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[4]/div/span/span[5]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-text"
+      },
+      "tail": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[4]/div/span",
+      "tag": "span",
+      "attrs": {},
+      "tail": "\n    "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[4]/div/sup[1]",
+      "tag": "sup",
+      "attrs": {
+        "data-footnote-number": "1",
+        "data-footnote-id": "1"
+      },
+      "text": "a"
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[4]/div/sup[1]/span",
+      "tag": "span",
+      "attrs": {
+        "class": "comma"
+      },
+      "text": ","
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[4]/div/sup[1]/span",
+      "tag": "span",
+      "attrs": {
+        "class": "comma"
+      },
+      "tail": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[4]/div/sup[1]",
+      "tag": "sup",
+      "attrs": {
+        "data-footnote-number": "1",
+        "data-footnote-id": "1"
+      },
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[4]/div/sup[2]",
+      "tag": "sup",
+      "attrs": {
+        "data-footnote-number": "1",
+        "data-footnote-id": "2"
+      },
+      "text": "b"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[4]/div/sup[2]",
+      "tag": "sup",
+      "attrs": {
+        "data-footnote-number": "1",
+        "data-footnote-id": "2"
+      },
+      "tail": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[4]/div",
+      "tag": "div",
+      "attrs": {
+        "class": "cell-content"
+      },
+      "tail": "\n  "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]/td[4]",
+      "tag": "td",
+      "attrs": {
+        "data-col-no": "6",
+        "data-property": "quality",
+        "class": "quality not-editable-cell"
+      },
+      "tail": "\n\n"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[1]",
+      "tag": "tr",
+      "attrs": {
+        "data-view-cid": "view24119",
+        "class": "outcome-row outcome-sof-printout-row",
+        "data-item-cid": "c718"
+      },
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]",
+      "tag": "tr",
+      "attrs": {
+        "data-view-cid": "view24184",
+        "class": "outcome-row outcome-sof-printout-row",
+        "data-item-cid": "c719"
+      },
+      "text": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[1]",
+      "tag": "td",
+      "attrs": {
+        "class": "outcome-cell",
+        "data-col-no": "1",
+        "data-property": "sofOutcomeLabel"
+      },
+      "text": "\n  "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[1]/div",
+      "tag": "div",
+      "attrs": {
+        "class": "cell-content"
+      },
+      "text": "\n      "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[1]/div/span",
+      "tag": "span",
+      "attrs": {},
+      "text": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[1]/div/span/span",
+      "tag": "span",
+      "attrs": {
+        "class": "label outcome-name"
+      },
+      "text": "Neonatal Bleeding –Severe (reported as 'major bleeding')"
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[1]/div/span/span/br[1]",
+      "tag": "br",
+      "attrs": {},
+      "text": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[1]/div/span/span/br[1]",
+      "tag": "br",
+      "attrs": {},
+      "tail": "assessed with: clinical assessment"
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[1]/div/span/span/br[2]",
+      "tag": "br",
+      "attrs": {},
+      "text": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[1]/div/span/span/br[2]",
+      "tag": "br",
+      "attrs": {},
+      "tail": "follow up: range 1 weeks to 12 weeks"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[1]/div/span/span",
+      "tag": "span",
+      "attrs": {
+        "class": "label outcome-name"
+      },
+      "tail": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[1]/div/span",
+      "tag": "span",
+      "attrs": {},
+      "tail": "\n  "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[1]/div",
+      "tag": "div",
+      "attrs": {
+        "class": "cell-content"
+      },
+      "tail": "\n"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[1]",
+      "tag": "td",
+      "attrs": {
+        "class": "outcome-cell",
+        "data-col-no": "1",
+        "data-property": "sofOutcomeLabel"
+      },
+      "tail": "\n\n        "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[2]",
+      "tag": "td",
+      "attrs": {
+        "data-col-no": "2",
+        "data-property": "narrativeDesc",
+        "class": "narrative-desc impact white-cell",
+        "colspan": "3"
+      },
+      "text": "\n  "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[2]/div",
+      "tag": "div",
+      "attrs": {
+        "class": "cell-content"
+      },
+      "text": "\n    "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[2]/div/span",
+      "tag": "span",
+      "attrs": {},
+      "text": "The rate of major bleedings in all patients with PVT varies from 4.5% to 80%, and it's mostly related to esophageal varices and portal hypertension. Studies did not report bleeding events separately in those receiving and not receiving anticoagulation. [Morag 2006, Alvares 1983, Peter 2003] The rate of bleeding (from other pediatric populations) ranges from 3% to 5% with LMWH, UFH or VKA. [Ignjatovic 2010, Massicotte 2003] \n    "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[2]/div/span",
+      "tag": "span",
+      "attrs": {},
+      "tail": "\n  "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[2]/div",
+      "tag": "div",
+      "attrs": {
+        "class": "cell-content"
+      },
+      "tail": "\n"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[2]",
+      "tag": "td",
+      "attrs": {
+        "data-col-no": "2",
+        "data-property": "narrativeDesc",
+        "class": "narrative-desc impact white-cell",
+        "colspan": "3"
+      },
+      "tail": "\n\n  "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[3]",
+      "tag": "td",
+      "attrs": {
+        "class": "no-of-participants",
+        "data-property": "noOfParticipantsStudies",
+        "data-col-no": "5"
+      },
+      "text": "\n    "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[3]/div",
+      "tag": "div",
+      "attrs": {
+        "class": "cell-content"
+      },
+      "text": "\n      "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[3]/div/span",
+      "tag": "span",
+      "attrs": {},
+      "text": "(5 observational studies)"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[3]/div/span",
+      "tag": "span",
+      "attrs": {},
+      "tail": "\n    "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[3]/div/sup[1]",
+      "tag": "sup",
+      "attrs": {
+        "data-reference-number": "1",
+        "data-reference-id": "ref_d518be4c52320f6f3a0c5a2790a81b16"
+      },
+      "text": "2"
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[3]/div/sup[1]/span",
+      "tag": "span",
+      "attrs": {
+        "class": "comma"
+      },
+      "text": ","
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[3]/div/sup[1]/span",
+      "tag": "span",
+      "attrs": {
+        "class": "comma"
+      },
+      "tail": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[3]/div/sup[1]",
+      "tag": "sup",
+      "attrs": {
+        "data-reference-number": "1",
+        "data-reference-id": "ref_d518be4c52320f6f3a0c5a2790a81b16"
+      },
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[3]/div/sup[2]",
+      "tag": "sup",
+      "attrs": {
+        "data-reference-number": "1",
+        "data-reference-id": "ref_0182411639a352a02b246719063701d0"
+      },
+      "text": "4"
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[3]/div/sup[2]/span",
+      "tag": "span",
+      "attrs": {
+        "class": "comma"
+      },
+      "text": ","
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[3]/div/sup[2]/span",
+      "tag": "span",
+      "attrs": {
+        "class": "comma"
+      },
+      "tail": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[3]/div/sup[2]",
+      "tag": "sup",
+      "attrs": {
+        "data-reference-number": "1",
+        "data-reference-id": "ref_0182411639a352a02b246719063701d0"
+      },
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[3]/div/sup[3]",
+      "tag": "sup",
+      "attrs": {
+        "data-reference-number": "1",
+        "data-reference-id": "ref_d96cb072f31048e1cfdaace4f572b66d"
+      },
+      "text": "5"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[3]/div/sup[3]",
+      "tag": "sup",
+      "attrs": {
+        "data-reference-number": "1",
+        "data-reference-id": "ref_d96cb072f31048e1cfdaace4f572b66d"
+      },
+      "tail": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[3]/div",
+      "tag": "div",
+      "attrs": {
+        "class": "cell-content"
+      },
+      "tail": "\n  "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[3]",
+      "tag": "td",
+      "attrs": {
+        "class": "no-of-participants",
+        "data-property": "noOfParticipantsStudies",
+        "data-col-no": "5"
+      },
+      "tail": "\n\n  "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[4]",
+      "tag": "td",
+      "attrs": {
+        "data-col-no": "6",
+        "data-property": "quality",
+        "class": "quality not-editable-cell"
+      },
+      "text": "\n    "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[4]/div",
+      "tag": "div",
+      "attrs": {
+        "class": "cell-content"
+      },
+      "text": "\n      "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[4]/div/span",
+      "tag": "span",
+      "attrs": {},
+      "text": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[4]/div/span/span[1]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-sign"
+      },
+      "text": "⨁"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[4]/div/span/span[1]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-sign"
+      },
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[4]/div/span/span[2]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-sign"
+      },
+      "text": "◯"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[4]/div/span/span[2]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-sign"
+      },
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[4]/div/span/span[3]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-sign"
+      },
+      "text": "◯"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[4]/div/span/span[3]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-sign"
+      },
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[4]/div/span/span[4]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-sign"
+      },
+      "text": "◯"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[4]/div/span/span[4]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-sign"
+      },
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[4]/div/span/br",
+      "tag": "br",
+      "attrs": {},
+      "text": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[4]/div/span/br",
+      "tag": "br",
+      "attrs": {},
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[4]/div/span/span[5]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-text"
+      },
+      "text": "VERY LOW"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[4]/div/span/span[5]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-text"
+      },
+      "tail": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[4]/div/span",
+      "tag": "span",
+      "attrs": {},
+      "tail": "\n    "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[4]/div/sup[1]",
+      "tag": "sup",
+      "attrs": {
+        "data-footnote-number": "1",
+        "data-footnote-id": "2"
+      },
+      "text": "b"
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[4]/div/sup[1]/span",
+      "tag": "span",
+      "attrs": {
+        "class": "comma"
+      },
+      "text": ","
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[4]/div/sup[1]/span",
+      "tag": "span",
+      "attrs": {
+        "class": "comma"
+      },
+      "tail": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[4]/div/sup[1]",
+      "tag": "sup",
+      "attrs": {
+        "data-footnote-number": "1",
+        "data-footnote-id": "2"
+      },
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[4]/div/sup[2]",
+      "tag": "sup",
+      "attrs": {
+        "data-footnote-number": "1",
+        "data-footnote-id": "3"
+      },
+      "text": "c"
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[4]/div/sup[2]/span",
+      "tag": "span",
+      "attrs": {
+        "class": "comma"
+      },
+      "text": ","
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[4]/div/sup[2]/span",
+      "tag": "span",
+      "attrs": {
+        "class": "comma"
+      },
+      "tail": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[4]/div/sup[2]",
+      "tag": "sup",
+      "attrs": {
+        "data-footnote-number": "1",
+        "data-footnote-id": "3"
+      },
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[4]/div/sup[3]",
+      "tag": "sup",
+      "attrs": {
+        "data-footnote-number": "1",
+        "data-footnote-id": "4"
+      },
+      "text": "d"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[4]/div/sup[3]",
+      "tag": "sup",
+      "attrs": {
+        "data-footnote-number": "1",
+        "data-footnote-id": "4"
+      },
+      "tail": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[4]/div",
+      "tag": "div",
+      "attrs": {
+        "class": "cell-content"
+      },
+      "tail": "\n  "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]/td[4]",
+      "tag": "td",
+      "attrs": {
+        "data-col-no": "6",
+        "data-property": "quality",
+        "class": "quality not-editable-cell"
+      },
+      "tail": "\n\n"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[2]",
+      "tag": "tr",
+      "attrs": {
+        "data-view-cid": "view24184",
+        "class": "outcome-row outcome-sof-printout-row",
+        "data-item-cid": "c719"
+      },
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]",
+      "tag": "tr",
+      "attrs": {
+        "data-view-cid": "view24249",
+        "class": "outcome-row outcome-sof-printout-row",
+        "data-item-cid": "c720"
+      },
+      "text": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[1]",
+      "tag": "td",
+      "attrs": {
+        "class": "outcome-cell",
+        "data-col-no": "1",
+        "data-property": "sofOutcomeLabel"
+      },
+      "text": "\n  "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[1]/div",
+      "tag": "div",
+      "attrs": {
+        "class": "cell-content"
+      },
+      "text": "\n      "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[1]/div/span",
+      "tag": "span",
+      "attrs": {},
+      "text": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[1]/div/span/span",
+      "tag": "span",
+      "attrs": {
+        "class": "label outcome-name"
+      },
+      "text": "Portal vein thrombosis (described as any VTE or 'no resolution' of the PVT)"
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[1]/div/span/span/br[1]",
+      "tag": "br",
+      "attrs": {},
+      "text": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[1]/div/span/span/br[1]",
+      "tag": "br",
+      "attrs": {},
+      "tail": "assessed with: clinical diagnosis and imaging"
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[1]/div/span/span/br[2]",
+      "tag": "br",
+      "attrs": {},
+      "text": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[1]/div/span/span/br[2]",
+      "tag": "br",
+      "attrs": {},
+      "tail": "follow up: range 1 weeks to 12 weeks"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[1]/div/span/span",
+      "tag": "span",
+      "attrs": {
+        "class": "label outcome-name"
+      },
+      "tail": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[1]/div/span",
+      "tag": "span",
+      "attrs": {},
+      "tail": "\n  "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[1]/div",
+      "tag": "div",
+      "attrs": {
+        "class": "cell-content"
+      },
+      "tail": "\n"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[1]",
+      "tag": "td",
+      "attrs": {
+        "class": "outcome-cell",
+        "data-col-no": "1",
+        "data-property": "sofOutcomeLabel"
+      },
+      "tail": "\n\n        "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[2]",
+      "tag": "td",
+      "attrs": {
+        "data-col-no": "2",
+        "data-property": "narrativeDesc",
+        "class": "narrative-desc impact white-cell",
+        "colspan": "3"
+      },
+      "text": "\n  "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[2]/div",
+      "tag": "div",
+      "attrs": {
+        "class": "cell-content"
+      },
+      "text": "\n    "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[2]/div/span",
+      "tag": "span",
+      "attrs": {},
+      "text": "The rate of thrombotic events on each group of study is unknown. There is no distinction between groups on thrombotic outcomes. [Morag 2006] In patients with no AC, spontaneous resolution of PVT occurs in 70% to 77% of patients with non-occlusive clots, and 31% to 48% in those with occlusive clots. The same study describes 'no association' between AC and poor outcomes. "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[2]/div/span",
+      "tag": "span",
+      "attrs": {},
+      "tail": "\n  "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[2]/div",
+      "tag": "div",
+      "attrs": {
+        "class": "cell-content"
+      },
+      "tail": "\n"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[2]",
+      "tag": "td",
+      "attrs": {
+        "data-col-no": "2",
+        "data-property": "narrativeDesc",
+        "class": "narrative-desc impact white-cell",
+        "colspan": "3"
+      },
+      "tail": "\n\n  "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[3]",
+      "tag": "td",
+      "attrs": {
+        "class": "no-of-participants",
+        "data-property": "noOfParticipantsStudies",
+        "data-col-no": "5"
+      },
+      "text": "\n    "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[3]/div",
+      "tag": "div",
+      "attrs": {
+        "class": "cell-content"
+      },
+      "text": "\n      "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[3]/div/span",
+      "tag": "span",
+      "attrs": {},
+      "text": "(1 observational study)"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[3]/div/span",
+      "tag": "span",
+      "attrs": {},
+      "tail": "\n    "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[3]/div/sup",
+      "tag": "sup",
+      "attrs": {
+        "data-reference-number": "1",
+        "data-reference-id": "ref_d518be4c52320f6f3a0c5a2790a81b16"
+      },
+      "text": "2"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[3]/div/sup",
+      "tag": "sup",
+      "attrs": {
+        "data-reference-number": "1",
+        "data-reference-id": "ref_d518be4c52320f6f3a0c5a2790a81b16"
+      },
+      "tail": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[3]/div",
+      "tag": "div",
+      "attrs": {
+        "class": "cell-content"
+      },
+      "tail": "\n  "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[3]",
+      "tag": "td",
+      "attrs": {
+        "class": "no-of-participants",
+        "data-property": "noOfParticipantsStudies",
+        "data-col-no": "5"
+      },
+      "tail": "\n\n  "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[4]",
+      "tag": "td",
+      "attrs": {
+        "data-col-no": "6",
+        "data-property": "quality",
+        "class": "quality not-editable-cell"
+      },
+      "text": "\n    "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[4]/div",
+      "tag": "div",
+      "attrs": {
+        "class": "cell-content"
+      },
+      "text": "\n      "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[4]/div/span",
+      "tag": "span",
+      "attrs": {},
+      "text": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[4]/div/span/span[1]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-sign"
+      },
+      "text": "⨁"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[4]/div/span/span[1]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-sign"
+      },
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[4]/div/span/span[2]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-sign"
+      },
+      "text": "◯"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[4]/div/span/span[2]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-sign"
+      },
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[4]/div/span/span[3]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-sign"
+      },
+      "text": "◯"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[4]/div/span/span[3]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-sign"
+      },
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[4]/div/span/span[4]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-sign"
+      },
+      "text": "◯"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[4]/div/span/span[4]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-sign"
+      },
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[4]/div/span/br",
+      "tag": "br",
+      "attrs": {},
+      "text": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[4]/div/span/br",
+      "tag": "br",
+      "attrs": {},
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[4]/div/span/span[5]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-text"
+      },
+      "text": "VERY LOW"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[4]/div/span/span[5]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-text"
+      },
+      "tail": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[4]/div/span",
+      "tag": "span",
+      "attrs": {},
+      "tail": "\n    "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[4]/div/sup[1]",
+      "tag": "sup",
+      "attrs": {
+        "data-footnote-number": "1",
+        "data-footnote-id": "2"
+      },
+      "text": "b"
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[4]/div/sup[1]/span",
+      "tag": "span",
+      "attrs": {
+        "class": "comma"
+      },
+      "text": ","
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[4]/div/sup[1]/span",
+      "tag": "span",
+      "attrs": {
+        "class": "comma"
+      },
+      "tail": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[4]/div/sup[1]",
+      "tag": "sup",
+      "attrs": {
+        "data-footnote-number": "1",
+        "data-footnote-id": "2"
+      },
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[4]/div/sup[2]",
+      "tag": "sup",
+      "attrs": {
+        "data-footnote-number": "1",
+        "data-footnote-id": "3"
+      },
+      "text": "c"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[4]/div/sup[2]",
+      "tag": "sup",
+      "attrs": {
+        "data-footnote-number": "1",
+        "data-footnote-id": "3"
+      },
+      "tail": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[4]/div",
+      "tag": "div",
+      "attrs": {
+        "class": "cell-content"
+      },
+      "tail": "\n  "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]/td[4]",
+      "tag": "td",
+      "attrs": {
+        "data-col-no": "6",
+        "data-property": "quality",
+        "class": "quality not-editable-cell"
+      },
+      "tail": "\n\n"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[3]",
+      "tag": "tr",
+      "attrs": {
+        "data-view-cid": "view24249",
+        "class": "outcome-row outcome-sof-printout-row",
+        "data-item-cid": "c720"
+      },
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]",
+      "tag": "tr",
+      "attrs": {
+        "data-view-cid": "view24314",
+        "class": "outcome-row outcome-sof-printout-row",
+        "data-item-cid": "c721"
+      },
+      "text": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[1]",
+      "tag": "td",
+      "attrs": {
+        "class": "outcome-cell",
+        "data-col-no": "1",
+        "data-property": "sofOutcomeLabel"
+      },
+      "text": "\n  "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[1]/div",
+      "tag": "div",
+      "attrs": {
+        "class": "cell-content"
+      },
+      "text": "\n      "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[1]/div/span",
+      "tag": "span",
+      "attrs": {},
+      "text": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[1]/div/span/span",
+      "tag": "span",
+      "attrs": {
+        "class": "label outcome-name"
+      },
+      "text": "Heparin induced thrombocytopenia"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[1]/div/span/span",
+      "tag": "span",
+      "attrs": {
+        "class": "label outcome-name"
+      },
+      "tail": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[1]/div/span",
+      "tag": "span",
+      "attrs": {},
+      "tail": "\n  "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[1]/div",
+      "tag": "div",
+      "attrs": {
+        "class": "cell-content"
+      },
+      "tail": "\n"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[1]",
+      "tag": "td",
+      "attrs": {
+        "class": "outcome-cell",
+        "data-col-no": "1",
+        "data-property": "sofOutcomeLabel"
+      },
+      "tail": "\n\n        "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[2]",
+      "tag": "td",
+      "attrs": {
+        "data-col-no": "2",
+        "data-property": "narrativeDesc",
+        "class": "narrative-desc impact white-cell",
+        "colspan": "3"
+      },
+      "text": "\n  "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[2]/div",
+      "tag": "div",
+      "attrs": {
+        "class": "cell-content"
+      },
+      "text": "\n    "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[2]/div/span",
+      "tag": "span",
+      "attrs": {},
+      "text": "Two observational studies reported the risk of HIT varies for pediatric patients. The risk is estimated to be close to 0% in children receiving standard heparin or LMWH. The risk of HIT is 2.3% (14/612) in children receiving heparin in the PICU. [Newall 2003; Schmugge 2002]\n    "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[2]/div/span",
+      "tag": "span",
+      "attrs": {},
+      "tail": "\n  "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[2]/div",
+      "tag": "div",
+      "attrs": {
+        "class": "cell-content"
+      },
+      "tail": "\n"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[2]",
+      "tag": "td",
+      "attrs": {
+        "data-col-no": "2",
+        "data-property": "narrativeDesc",
+        "class": "narrative-desc impact white-cell",
+        "colspan": "3"
+      },
+      "tail": "\n\n  "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[3]",
+      "tag": "td",
+      "attrs": {
+        "class": "no-of-participants",
+        "data-property": "noOfParticipantsStudies",
+        "data-col-no": "5"
+      },
+      "text": "\n    "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[3]/div",
+      "tag": "div",
+      "attrs": {
+        "class": "cell-content"
+      },
+      "text": "\n      "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[3]/div/span",
+      "tag": "span",
+      "attrs": {},
+      "text": "(2 observational studies)"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[3]/div/span",
+      "tag": "span",
+      "attrs": {},
+      "tail": "\n    "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[3]/div/sup[1]",
+      "tag": "sup",
+      "attrs": {
+        "data-reference-number": "1",
+        "data-reference-id": "ref_3b207f9cc2d420dafa04fa3eb3f9e17a"
+      },
+      "text": "6"
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[3]/div/sup[1]/span",
+      "tag": "span",
+      "attrs": {
+        "class": "comma"
+      },
+      "text": ","
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[3]/div/sup[1]/span",
+      "tag": "span",
+      "attrs": {
+        "class": "comma"
+      },
+      "tail": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[3]/div/sup[1]",
+      "tag": "sup",
+      "attrs": {
+        "data-reference-number": "1",
+        "data-reference-id": "ref_3b207f9cc2d420dafa04fa3eb3f9e17a"
+      },
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[3]/div/sup[2]",
+      "tag": "sup",
+      "attrs": {
+        "data-reference-number": "1",
+        "data-reference-id": "ref_3c1753f64af0093b48edcb51afc39ea1"
+      },
+      "text": "7"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[3]/div/sup[2]",
+      "tag": "sup",
+      "attrs": {
+        "data-reference-number": "1",
+        "data-reference-id": "ref_3c1753f64af0093b48edcb51afc39ea1"
+      },
+      "tail": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[3]/div",
+      "tag": "div",
+      "attrs": {
+        "class": "cell-content"
+      },
+      "tail": "\n  "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[3]",
+      "tag": "td",
+      "attrs": {
+        "class": "no-of-participants",
+        "data-property": "noOfParticipantsStudies",
+        "data-col-no": "5"
+      },
+      "tail": "\n\n  "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[4]",
+      "tag": "td",
+      "attrs": {
+        "data-col-no": "6",
+        "data-property": "quality",
+        "class": "quality not-editable-cell"
+      },
+      "text": "\n    "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[4]/div",
+      "tag": "div",
+      "attrs": {
+        "class": "cell-content"
+      },
+      "text": "\n      "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[4]/div/span",
+      "tag": "span",
+      "attrs": {},
+      "text": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[4]/div/span/span[1]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-sign"
+      },
+      "text": "⨁"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[4]/div/span/span[1]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-sign"
+      },
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[4]/div/span/span[2]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-sign"
+      },
+      "text": "◯"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[4]/div/span/span[2]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-sign"
+      },
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[4]/div/span/span[3]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-sign"
+      },
+      "text": "◯"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[4]/div/span/span[3]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-sign"
+      },
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[4]/div/span/span[4]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-sign"
+      },
+      "text": "◯"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[4]/div/span/span[4]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-sign"
+      },
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[4]/div/span/br",
+      "tag": "br",
+      "attrs": {},
+      "text": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[4]/div/span/br",
+      "tag": "br",
+      "attrs": {},
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[4]/div/span/span[5]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-text"
+      },
+      "text": "VERY LOW"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[4]/div/span/span[5]",
+      "tag": "span",
+      "attrs": {
+        "class": "quality-text"
+      },
+      "tail": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[4]/div/span",
+      "tag": "span",
+      "attrs": {},
+      "tail": "\n    "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[4]/div/sup",
+      "tag": "sup",
+      "attrs": {
+        "data-footnote-number": "1",
+        "data-footnote-id": "6"
+      },
+      "text": "e"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[4]/div/sup",
+      "tag": "sup",
+      "attrs": {
+        "data-footnote-number": "1",
+        "data-footnote-id": "6"
+      },
+      "tail": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[4]/div",
+      "tag": "div",
+      "attrs": {
+        "class": "cell-content"
+      },
+      "tail": "\n  "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]/td[4]",
+      "tag": "td",
+      "attrs": {
+        "data-col-no": "6",
+        "data-property": "quality",
+        "class": "quality not-editable-cell"
+      },
+      "tail": "\n\n"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]/tr[4]",
+      "tag": "tr",
+      "attrs": {
+        "data-view-cid": "view24314",
+        "class": "outcome-row outcome-sof-printout-row",
+        "data-item-cid": "c721"
+      },
+      "tail": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[1]",
+      "tag": "tbody",
+      "attrs": {
+        "class": "printout-rows"
+      },
+      "tail": "\n  "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[2]",
+      "tag": "tbody",
+      "attrs": {},
+      "text": "\n    "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[2]/tr",
+      "tag": "tr",
+      "attrs": {},
+      "text": "\n      "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[2]/tr/td",
+      "tag": "td",
+      "attrs": {
+        "colspan": "6"
+      },
+      "text": "\n        *"
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[2]/tr/td/b[1]",
+      "tag": "b",
+      "attrs": {},
+      "text": "The risk in the intervention group"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[2]/tr/td/b[1]",
+      "tag": "b",
+      "attrs": {},
+      "tail": " (and its 95% confidence interval) is based on the assumed risk in the comparison group and the "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[2]/tr/td/b[2]",
+      "tag": "b",
+      "attrs": {},
+      "text": "relative effect"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[2]/tr/td/b[2]",
+      "tag": "b",
+      "attrs": {},
+      "tail": " of the intervention (and its 95% CI).\n        "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[2]/tr/td/br[1]",
+      "tag": "br",
+      "attrs": {},
+      "text": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[2]/tr/td/br[1]",
+      "tag": "br",
+      "attrs": {},
+      "tail": "\n        "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[2]/tr/td/br[2]",
+      "tag": "br",
+      "attrs": {},
+      "text": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[2]/tr/td/br[2]",
+      "tag": "br",
+      "attrs": {},
+      "tail": "\n        "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[2]/tr/td/b[3]",
+      "tag": "b",
+      "attrs": {},
+      "text": "CI:"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[2]/tr/td/b[3]",
+      "tag": "b",
+      "attrs": {},
+      "tail": " Confidence interval\n      "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[2]/tr/td",
+      "tag": "td",
+      "attrs": {
+        "colspan": "6"
+      },
+      "tail": "\n    "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[2]/tr",
+      "tag": "tr",
+      "attrs": {},
+      "tail": "\n  "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[2]",
+      "tag": "tbody",
+      "attrs": {},
+      "tail": "\n  "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[3]",
+      "tag": "tbody",
+      "attrs": {},
+      "text": "\n    "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[3]/tr",
+      "tag": "tr",
+      "attrs": {},
+      "text": "\n      "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[3]/tr/td",
+      "tag": "td",
+      "attrs": {
+        "colspan": "6"
+      },
+      "text": "\n        "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[3]/tr/td/b[1]",
+      "tag": "b",
+      "attrs": {},
+      "text": "GRADE Working Group grades of evidence"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[3]/tr/td/b[1]",
+      "tag": "b",
+      "attrs": {},
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[3]/tr/td/br[1]",
+      "tag": "br",
+      "attrs": {},
+      "text": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[3]/tr/td/br[1]",
+      "tag": "br",
+      "attrs": {},
+      "tail": " "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[3]/tr/td/b[2]",
+      "tag": "b",
+      "attrs": {},
+      "text": "High certainty:"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[3]/tr/td/b[2]",
+      "tag": "b",
+      "attrs": {},
+      "tail": " We are very confident that the true effect lies close to that of the estimate of the effect"
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[3]/tr/td/br[2]",
+      "tag": "br",
+      "attrs": {},
+      "text": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[3]/tr/td/br[2]",
+      "tag": "br",
+      "attrs": {},
+      "tail": " "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[3]/tr/td/b[3]",
+      "tag": "b",
+      "attrs": {},
+      "text": "Moderate certainty:"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[3]/tr/td/b[3]",
+      "tag": "b",
+      "attrs": {},
+      "tail": " We are moderately confident in the effect estimate: The true effect is likely to be close to the estimate of the effect, but there is a possibility that it is substantially different"
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[3]/tr/td/br[3]",
+      "tag": "br",
+      "attrs": {},
+      "text": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[3]/tr/td/br[3]",
+      "tag": "br",
+      "attrs": {},
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[3]/tr/td/b[4]",
+      "tag": "b",
+      "attrs": {},
+      "text": "Low certainty:"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[3]/tr/td/b[4]",
+      "tag": "b",
+      "attrs": {},
+      "tail": " Our confidence in the effect estimate is limited: The true effect may be substantially different from the estimate of the effect"
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[3]/tr/td/br[4]",
+      "tag": "br",
+      "attrs": {},
+      "text": ""
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[3]/tr/td/br[4]",
+      "tag": "br",
+      "attrs": {},
+      "tail": ""
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/table/tbody[3]/tr/td/b[5]",
+      "tag": "b",
+      "attrs": {},
+      "text": "Very low certainty:"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[3]/tr/td/b[5]",
+      "tag": "b",
+      "attrs": {},
+      "tail": " We have very little confidence in the effect estimate: The true effect is likely to be substantially different from the estimate of effect\n      "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[3]/tr/td",
+      "tag": "td",
+      "attrs": {
+        "colspan": "6"
+      },
+      "tail": "\n    "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[3]/tr",
+      "tag": "tr",
+      "attrs": {},
+      "tail": "\n  "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table/tbody[3]",
+      "tag": "tbody",
+      "attrs": {},
+      "tail": "\n"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/table",
+      "tag": "table",
+      "attrs": {
+        "class": "outcomes-table ",
+        "valign": "top",
+        "cellpadding": "5",
+        "width": "100%"
+      },
+      "tail": "\n\n    "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/h4",
+      "tag": "h4",
+      "attrs": {},
+      "text": "References"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/h4",
+      "tag": "h4",
+      "attrs": {},
+      "tail": "\n    "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/div",
+      "tag": "div",
+      "attrs": {
+        "class": "footnotes-list"
+      },
+      "text": "\n        "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/div/div[1]",
+      "tag": "div",
+      "attrs": {},
+      "text": "\n          "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/div/div[1]/span[1]",
+      "tag": "span",
+      "attrs": {},
+      "text": "1. "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/div/div[1]/span[1]",
+      "tag": "span",
+      "attrs": {},
+      "tail": "\n          "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/div/div[1]/span[2]",
+      "tag": "span",
+      "attrs": {},
+      "text": "Kim JH, Lee YS,Kim SH,Lee SK,Lim MK,Kim HS. Does umbilical vein catheterization lead to portal venous thrombosis? Prospective US evaluation in 100 neonates. Radiology. 2001;219:645-50.."
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/div/div[1]/span[2]",
+      "tag": "span",
+      "attrs": {},
+      "tail": "\n        "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/div/div[1]",
+      "tag": "div",
+      "attrs": {},
+      "tail": "\n        "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/div/div[2]",
+      "tag": "div",
+      "attrs": {},
+      "text": "\n          "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/div/div[2]/span[1]",
+      "tag": "span",
+      "attrs": {},
+      "text": "2. "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/div/div[2]/span[1]",
+      "tag": "span",
+      "attrs": {},
+      "tail": "\n          "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/div/div[2]/span[2]",
+      "tag": "span",
+      "attrs": {},
+      "text": "Morag I, Epelman M,Daneman A,Moineddin R,Parvez B,Shechter T,et al. Portal vein thrombosis in the neonate: risk factors, course, and outcome. J Pediatr. 2006;148:735-9.."
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/div/div[2]/span[2]",
+      "tag": "span",
+      "attrs": {},
+      "tail": "\n        "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/div/div[2]",
+      "tag": "div",
+      "attrs": {},
+      "tail": "\n        "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/div/div[3]",
+      "tag": "div",
+      "attrs": {},
+      "text": "\n          "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/div/div[3]/span[1]",
+      "tag": "span",
+      "attrs": {},
+      "text": "3. "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/div/div[3]/span[1]",
+      "tag": "span",
+      "attrs": {},
+      "tail": "\n          "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/div/div[3]/span[2]",
+      "tag": "span",
+      "attrs": {},
+      "text": "Schwartz, DS, Gettner, PA, Konstantino, MM, Bartley, CL, Keller, MS, Ehrenkranz, RA. Umbilical venous catheterization and the risk of portal vein thrombosis. J Pediatr; 1997."
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/div/div[3]/span[2]",
+      "tag": "span",
+      "attrs": {},
+      "tail": "\n        "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/div/div[3]",
+      "tag": "div",
+      "attrs": {},
+      "tail": "\n        "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/div/div[4]",
+      "tag": "div",
+      "attrs": {},
+      "text": "\n          "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/div/div[4]/span[1]",
+      "tag": "span",
+      "attrs": {},
+      "text": "4. "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/div/div[4]/span[1]",
+      "tag": "span",
+      "attrs": {},
+      "tail": "\n          "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/div/div[4]/span[2]",
+      "tag": "span",
+      "attrs": {},
+      "text": "Alvarez, F, Bernard, O, Brunelle, F, Hadchouel, P, Odievre, M, Alagille, D. Portal obstruction in children. Clinical investigation and hemorrhage risk. J Pediatr; 1983."
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/div/div[4]/span[2]",
+      "tag": "span",
+      "attrs": {},
+      "tail": "\n        "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/div/div[4]",
+      "tag": "div",
+      "attrs": {},
+      "tail": "\n        "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/div/div[5]",
+      "tag": "div",
+      "attrs": {},
+      "text": "\n          "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/div/div[5]/span[1]",
+      "tag": "span",
+      "attrs": {},
+      "text": "5. "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/div/div[5]/span[1]",
+      "tag": "span",
+      "attrs": {},
+      "tail": "\n          "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/div/div[5]/span[2]",
+      "tag": "span",
+      "attrs": {},
+      "text": "Ignjatovic, V, Najid, S, Newall, F. Dosing and monitoring of enoxaparin (Low molecular weight heparin) therapy in children. Br J Haematol; 2010."
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/div/div[5]/span[2]",
+      "tag": "span",
+      "attrs": {},
+      "tail": "\n        "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/div/div[5]",
+      "tag": "div",
+      "attrs": {},
+      "tail": "\n        "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/div/div[6]",
+      "tag": "div",
+      "attrs": {},
+      "text": "\n          "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/div/div[6]/span[1]",
+      "tag": "span",
+      "attrs": {},
+      "text": "6. "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/div/div[6]/span[1]",
+      "tag": "span",
+      "attrs": {},
+      "tail": "\n          "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/div/div[6]/span[2]",
+      "tag": "span",
+      "attrs": {},
+      "text": "Newall F, Barnes C,Ignjatovic V,Monagle P. Heparin-induced thrombocytopenia in children. J Paediatr Child Health. 2003;39:289-92.."
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/div/div[6]/span[2]",
+      "tag": "span",
+      "attrs": {},
+      "tail": "\n        "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/div/div[6]",
+      "tag": "div",
+      "attrs": {},
+      "tail": "\n        "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/div/div[7]",
+      "tag": "div",
+      "attrs": {},
+      "text": "\n          "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/div/div[7]/span[1]",
+      "tag": "span",
+      "attrs": {},
+      "text": "7. "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/div/div[7]/span[1]",
+      "tag": "span",
+      "attrs": {},
+      "tail": "\n          "
+    },
+    {
+      "type": "start",
+      "xpath": "/html[1]/body/div/div[7]/span[2]",
+      "tag": "span",
+      "attrs": {},
+      "text": "Schmugge M, Risch L,Huber AR,Benn A,Fischer JE. Heparin-induced thrombocytopenia-associated thrombosis in pediatric intensive care patients. Pediatrics. 2002;109:E10.."
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/div/div[7]/span[2]",
+      "tag": "span",
+      "attrs": {},
+      "tail": "\n        "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/div/div[7]",
+      "tag": "div",
+      "attrs": {},
+      "tail": "\n    "
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body/div",
+      "tag": "div",
+      "attrs": {
+        "class": "footnotes-list"
+      },
+      "tail": "\n"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]/body",
+      "tag": "body",
+      "attrs": {},
+      "tail": "\n"
+    },
+    {
+      "type": "end",
+      "xpath": "/html[1]",
+      "tag": "html",
+      "attrs": {
+        "class": "no-js",
+        "lang": "en"
+      },
+      "tail": ""
+    }
+  ]
+}

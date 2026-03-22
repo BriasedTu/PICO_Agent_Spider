@@ -1,0 +1,56 @@
+[
+  {
+    "file_name": "10.1002-14651858.CD000060.pub2.pdf",
+    "state": "done",
+    "data_id": "doc_0",
+    "zip_url": "https://cdn-mineru.openxlab.org.cn/pdf/2025-11-06/dd17352c-4665-43ac-a165-14c171f670e2.zip"
+  },
+  {
+    "file_name": "10.1002-14651858.CD000104.pub4.pdf",
+    "state": "done",
+    "data_id": "doc_1",
+    "zip_url": "https://cdn-mineru.openxlab.org.cn/pdf/2025-11-06/a09b87b8-e1ef-4740-b362-a4cee938146b.zip"
+  },
+  {
+    "file_name": "10.1002-14651858.CD000122.pub2.pdf",
+    "state": "done",
+    "data_id": "doc_2",
+    "zip_url": "https://cdn-mineru.openxlab.org.cn/pdf/2025-11-06/7ae95fe4-ebaa-4c47-b79c-d59e4e2affe4.zip"
+  },
+  {
+    "file_name": "10.1002-14651858.CD000144.pub3.pdf",
+    "state": "failed",
+    "data_id": "doc_3",
+    "error": "retry limit reached (5 attempts), please replace the file"
+  },
+  {
+    "file_name": "10.1002-14651858.CD000179.pub3.pdf",
+    "state": "done",
+    "data_id": "doc_4",
+    "zip_url": "https://cdn-mineru.openxlab.org.cn/pdf/2025-11-06/afbaee47-2998-4714-9afe-a15fdfa1b07f.zip"
+  },
+  {
+    "file_name": "10.1002-14651858.CD000215.pub5.pdf",
+    "state": "done",
+    "data_id": "doc_5",
+    "zip_url": "https://cdn-mineru.openxlab.org.cn/pdf/2025-11-06/82bf307d-0022-4733-bc99-42b4f4950145.zip"
+  },
+  {
+    "file_name": "10.1002-14651858.CD000216.pub2.pdf",
+    "state": "done",
+    "data_id": "doc_6",
+    "zip_url": "https://cdn-mineru.openxlab.org.cn/pdf/2025-11-06/32abd3f2-5975-4521-a4c1-33a6c8c8dfe1.zip"
+  },
+  {
+    "file_name": "10.1002-14651858.CD000219.pub5.pdf",
+    "state": "done",
+    "data_id": "doc_7",
+    "zip_url": "https://cdn-mineru.openxlab.org.cn/pdf/2025-11-06/a5a12341-604f-4530-b342-4050976115aa.zip"
+  },
+  {
+    "file_name": "10.1002-14651858.CD000222.pub4.pdf",
+    "state": "done",
+    "data_id": "doc_8",
+    "zip_url": "https://cdn-mineru.openxlab.org.cn/pdf/2025-11-06/d761322f-584d-42bc-b7ad-2796a530fcf0.zip"
+  }
+]
