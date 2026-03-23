@@ -9,7 +9,7 @@
 - 美国疾病控制与预防中心[(CDC)](./PICO_Agent/CDC), 
 - 美国感染性疾病学会[(IDSN)](./New_PICO_Agent/IDSN),
 - 苏格兰校际指南网络[(SIGN)](./New_PICO_Agent/SIGN)
-- [GRADEPRO](./New_PICO_Agent/GREADPRO)
+- [GRADEPRO](./New_PICO_Agent/GRADEPRO)
 
 的爬虫，md转换和数据清洗代码。
 由于仓库容量限制，大部分爬取结果没有上传。~~此仓库中可以直接调用的爬取结果主要为GREADPRO网站的内容，其以json格式存储在[GREADPRO_GuidelineData](./New_PICO_Agent/GRADEPRO/guidelines_data)中。~~(由于论文还在撰写阶段，数据库暂时无法公开)
