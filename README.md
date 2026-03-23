@@ -12,6 +12,6 @@
 - [GREADPRO](./New_PICO_Agent/GREADPRO)
 
 的爬虫，md转换和数据清洗代码。
-由于仓库容量限制，大部分爬取结果没有上传。此仓库中可以直接调用的爬取结果主要为GREADPRO网站的内容，其以json格式存储在[GREADPRO_GuidelineData](./New_PICO_Agent/GREADPRO/guidelines_data)中。
+由于仓库容量限制，大部分爬取结果没有上传。~~此仓库中可以直接调用的爬取结果主要为GREADPRO网站的内容，其以json格式存储在[GREADPRO_GuidelineData](./New_PICO_Agent/GREADPRO/guidelines_data)中。~~(由于论文还在撰写阶段，数据库暂时无法公开)
 
 大部分代码为测试用，无法直接运行。
